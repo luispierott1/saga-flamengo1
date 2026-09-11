@@ -130,6 +130,13 @@ a{color:inherit}
 .tick.apagado{opacity:.13}
 .tick:hover,.tick:focus-visible{height:46px;outline:none}
 .tick:focus-visible{box-shadow:0 0 0 2px var(--ouro)}
+.tick[data-pen]{box-shadow:inset 0 5px 0 var(--ouro)}
+.tick[data-pen]:focus-visible{box-shadow:inset 0 5px 0 var(--ouro),0 0 0 2px var(--ouro)}
+.leitura .pen{
+  display:inline-block;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ouro);border:1px solid var(--ouro);padding:1px 6px;margin-left:8px;white-space:nowrap;
+}
+.retro-tabela .pen-mark{color:var(--ouro);font-weight:600;cursor:help}
 .intervalo{
   flex:0 0 14px;height:46px;border-left:1px dashed var(--vinho-2);
   border-right:1px dashed var(--vinho-2);
@@ -282,12 +289,12 @@ a{color:inherit}
     <h1>Diário do<br><em>Flamengo</em></h1>
     <p class="sub">Registro temporada a temporada do trabalho de Luís Pierott no Clube de Regatas do Flamengo. Cada ano tem a mesma estrutura: a espinha de todos os jogos, o que se ganhou e o que escapou, a narrativa do que aconteceu e os números que sobraram no fim.</p>
     <div class="acumulado">
-      <div><span>Temporadas</span> <b>4</b></div>
-      <div><span>Jogos</span> <b>285</b></div>
-      <div><span>Vitórias</span> <b>202</b></div>
-      <div><span>Gols</span> <b>701 : 235</b></div>
-      <div><span>Títulos</span> <b>11</b></div>
-      <div><span>Finais perdidas</span> <b>8</b></div>
+      <div><span>Temporadas</span> <b>7</b></div>
+      <div><span>Jogos</span> <b>502</b></div>
+      <div><span>Vitórias</span> <b>363</b></div>
+      <div><span>Gols</span> <b>1219 : 385</b></div>
+      <div><span>Títulos</span> <b>24</b></div>
+      <div><span>Finais perdidas</span> <b>12</b></div>
     </div>
   </div>
 </header>
@@ -299,8 +306,11 @@ a{color:inherit}
       <li><a href="#t2027">2027</a></li>
       <li><a href="#t2028">2028</a></li>
       <li><a href="#t2029">2029</a></li>
+      <li><a href="#t2030">2030</a></li>
+      <li><a href="#t2031">2031</a></li>
+      <li><a href="#t2032">2032</a></li>
       <li><a href="#retrospecto">Retrospecto</a></li>
-      <li class="vazia"><a href="#proxima">2030 · em aberto</a></li>
+      <li class="vazia"><a href="#proxima">2033 · em aberto</a></li>
     </ul>
   </div>
 </nav>
@@ -408,7 +418,7 @@ a{color:inherit}
         <h2>Vinte e nove jogos</h2>
         <p>No dia 13 de maio, em Assunção, o Flamengo venceu o Cerro Porteño por 4 a 0. Ninguém sabia na hora, mas ali começou a maior sequência invicta do clube nos registros recentes: 29 partidas sem perder, de 13 de maio a 21 de outubro. Cinco meses. Duas competições continentais no meio. Uma Copa do Mundo no intervalo.</p>
         <p>Porque o calendário parou. Entre 3 de junho e 23 de julho não teve jogo, e foi nesse buraco que a diretoria fez o melhor negócio do ano: Lucas Paquetá saiu para o Newcastle por 154 milhões. De La Cruz foi para a Arábia por 33,5. James Rodríguez, que tinha chegado de graça em janeiro, foi vendido ao Levante por 18,25 milhões em julho.</p>
-        <p>Na volta, o time era outro. Fred chegou do Fenerbahçe por 3,4 milhões e virou titular. Em agosto, Mané fez quatro gols em uma única noite contra o Platense, na Argentina. Pedro fez três contra o Athletico. O São Paulo levou 4 a 3 no Morumbi e depois caiu na Copa do Brasil. O Boca perdeu por 3 a 0 na Bombonera e foi eliminado sem apelação.</p>
+        <p>Na volta, o time era outro. Fred chegou do Fenerbahçe por 3,4 milhões e virou titular. Em agosto, Mané fez quatro gols em uma única noite contra o Platense, na Argentina. Pedro fez três contra o Athletico Paranaense. O São Paulo levou 4 a 3 no Morumbi e depois caiu na Copa do Brasil. O Boca perdeu por 3 a 0 na Bombonera e foi eliminado sem apelação.</p>
         <p>A invencibilidade acabou no dia 25 de outubro, no Allianz, contra o Palmeiras: 1 a 3, a maior derrota do ano. Três dias depois o Flamengo despachou o Independiente e estava na final da Libertadores.</p>
       </section>
 
@@ -437,7 +447,7 @@ a{color:inherit}
           <tr><td>4º Vasco</td><td>72</td></tr>
           <tr><td>5º São Paulo</td><td>68</td></tr>
           <tr><td>6º Corinthians</td><td>65</td></tr>
-          <tr class="neg"><td>Rebaixados</td><td>Athletico, Coritiba, Remo, Chapecoense</td></tr>
+          <tr class="neg"><td>Rebaixados</td><td>Athletico Paranaense, Coritiba, Remo, Chapecoense</td></tr>
         </table>
       </div>
 
@@ -751,7 +761,7 @@ a{color:inherit}
       <div><span>D</span> <b>8</b></div>
       <div><span>GP</span> <b>189</b></div>
       <div><span>GC</span> <b>53</b></div>
-      <div><span>Aproveitamento</span> <b>82,9%</b></div>
+      <div><span>Aproveitamento</span> <b>80,6%</b></div>
       <div><span>Público médio</span> <b>68.100</b></div>
     </div>
 
@@ -766,6 +776,7 @@ a{color:inherit}
         <span><i style="background:#6E6055"></i>Empate</span>
         <span><i style="background:var(--rubro)"></i>Derrota</span>
         <span><i style="background:var(--marfim-dim)"></i>Barra alta = decisão</span>
+        <span><i style="background:var(--ouro)"></i>Topo dourado = pênaltis</span>
         <span>Coluna tracejada = parada de junho e julho</span>
       </div>
       <div class="leitura vazia" data-leitura="2028" aria-live="polite">Passe o cursor ou toque em uma barra para ler o jogo.</div>
@@ -806,7 +817,7 @@ a{color:inherit}
         <h2>Duzentos e treze milhões</h2>
         <p class="abre">Nas duas primeiras temporadas o Flamengo tinha sido um clube vendedor: gastou 73 milhões e arrecadou 284. Em janeiro de 2028 isso mudou de uma vez. Rúben Neves veio do Al-Hilal por 56 milhões no dia 11. Erakovic chegou do Zenit por 32 no dia 13. Nehuén Pérez saiu do Porto por 45 no dia 16. Milinkovic-Savic desembarcou do Al-Hilal por 59 no dia 17.</p>
         <p>Foram 192 milhões em seis dias, 213 no ano inteiro, contra 11,5 milhões de receita. Allan, Varela e Petterson saíram de graça. Pela primeira vez em três anos a conta ficou no vermelho de propósito.</p>
-        <p>O time começou o Carioca fazendo 4 a 0 no Angra dos Reis, 6 a 1 no Fluminense e 6 a 0 na Cabofriense. Em 26 de janeiro, na estreia da Série A, aplicou 5 a 0 no Athletico com três de Pedro. Era outro time, e dava para ver na primeira semana.</p>
+        <p>O time começou o Carioca fazendo 4 a 0 no Angra dos Reis, 6 a 1 no Fluminense e 6 a 0 na Cabofriense. Em 26 de janeiro, na estreia da Série A, aplicou 5 a 0 no Athletico Paranaense com três de Pedro. Era outro time, e dava para ver na primeira semana.</p>
       </section>
 
       <section class="ato">
@@ -820,8 +831,8 @@ a{color:inherit}
       <section class="ato">
         <span class="eyebrow">Abril e maio</span>
         <h2>O único mês ruim</h2>
-        <p>Maio foi o mês em que o projeto pareceu não estar funcionando. O Athletico venceu por 1 a 0 no Maracanã pela Copa do Brasil, o Atlético Mineiro venceu em Belo Horizonte, o São Paulo venceu no Rio. Três derrotas em vinte dias, num time que tinha acabado de gastar duzentos milhões.</p>
-        <p>A resposta veio no dia 24: 6 a 1 no Athletico na volta, com quatro gols de Pedro numa noite só, revertendo a eliminação. Três dias depois, 1 a 0 no Palmeiras no Allianz.</p>
+        <p>Maio foi o mês em que o projeto pareceu não estar funcionando. O Athletico Paranaense venceu por 1 a 0 no Maracanã pela Copa do Brasil, o Atlético Mineiro venceu em Belo Horizonte, o São Paulo venceu no Rio. Três derrotas em vinte dias, num time que tinha acabado de gastar duzentos milhões.</p>
+        <p>A resposta veio no dia 24: 6 a 1 no Athletico Paranaense na volta, com quatro gols de Pedro numa noite só, revertendo a eliminação. Três dias depois, 1 a 0 no Palmeiras no Allianz.</p>
         <p>O gráfico de posição da Série A conta bem essa parte: o Flamengo passou boa parte do primeiro semestre fora do G-4, oscilando entre a sexta e a décima segunda colocação, e só assumiu a liderança perto da vigésima rodada. Depois nunca mais largou.</p>
       </section>
 
@@ -957,7 +968,7 @@ a{color:inherit}
       <div><span>D</span> <b>11</b></div>
       <div><span>GP</span> <b>173</b></div>
       <div><span>GC</span> <b>53</b></div>
-      <div><span>Aproveitamento</span> <b>75,5%</b></div>
+      <div><span>Aproveitamento</span> <b>74,5%</b></div>
       <div><span>Público médio</span> <b>67.836</b></div>
     </div>
 
@@ -972,6 +983,7 @@ a{color:inherit}
         <span><i style="background:#6E6055"></i>Empate</span>
         <span><i style="background:var(--rubro)"></i>Derrota</span>
         <span><i style="background:var(--marfim-dim)"></i>Barra alta = decisão</span>
+        <span><i style="background:var(--ouro)"></i>Topo dourado = pênaltis</span>
         <span>Coluna tracejada = parada de junho</span>
       </div>
       <div class="leitura vazia" data-leitura="2029" aria-live="polite">Passe o cursor ou toque em uma barra para ler o jogo.</div>
@@ -1004,6 +1016,11 @@ a{color:inherit}
         <p>1×3 Cruzeiro · 7.7.29</p>
       </div>
       <div class="trofeu perdido">
+        <div class="tag">Oitavas</div>
+        <h3>Copa Libertadores</h3>
+        <p>1×3 e 1×0 na Bahia · 2×3 no agregado</p>
+      </div>
+      <div class="trofeu perdido">
         <div class="tag">Vice</div>
         <h3>Copa do Brasil</h3>
         <p>1×3 São Paulo, final única · 9.12.29</p>
@@ -1023,14 +1040,14 @@ a{color:inherit}
         <span class="eyebrow">Março</span>
         <h2>Duas taças em nove dias</h2>
         <p>Dia 1º de março, ida e volta da Recopa Sudamericana contra o Atlético Mineiro: 3 a 0 no Rio, 2 a 1 em Belo Horizonte. Segundo título do ano.</p>
-        <p>Nove dias depois, em 10 de março, a final do Carioca contra o Fluminense, fora de casa: 2 a 1, terceiro troféu. O time entrou em abril com três taças no armário e a melhor versão do ano em campo — um 7 a 0 no Athletico veio logo na sequência, em 18 de março.</p>
+        <p>Nove dias depois, em 10 de março, a final do Carioca contra o Fluminense, fora de casa: 2 a 1, terceiro troféu. O time entrou em abril com três taças no armário e a melhor versão do ano em campo — um 7 a 0 no Athletico Paranaense veio logo na sequência, em 18 de março.</p>
       </section>
 
       <section class="ato">
         <span class="eyebrow">Abril a junho</span>
         <h2>Seis jogos, seis vitórias, o Mundial no meio</h2>
         <p>O grupo da Libertadores foi outro passeio: seis vitórias em seis jogos contra Estudiantes (LP), Anzoátegui e Olimpia, com 22 gols marcados e nenhum sofrido. A campanha na Série A seguia impecável, e o Flamengo chegou a junho com uma vaga garantida no Mundial de Clubes, agora disputado em formato ampliado.</p>
-        <p>O calendário parou entre 3 de junho e 20 de junho. Na volta, o adversário já era outro nível: Manchester United (2 a 0), Galatasaray (4 a 1) e Água Santa (1 a 1) na fase de grupos, seguidos de vitória sobre o Al-Ahli saudita nas oitavas por 1 a 1 (assim mesmo, na cobrança de pênaltis, segundo os registros de "R of 16").</p>
+        <p>O calendário parou entre 3 de junho e 20 de junho. Na volta, o adversário já era outro nível: Manchester United (2 a 0), Galatasaray (4 a 1) e Água Santa (1 a 1) na fase de grupos, e, nas oitavas, um 1 a 1 com o Al-Ahli saudita que só se resolveu na cobrança de pênaltis.</p>
       </section>
 
       <section class="ato">
@@ -1042,7 +1059,7 @@ a{color:inherit}
       <section class="ato">
         <span class="eyebrow">Agosto e setembro</span>
         <h2>A única sequência de derrotas</h2>
-        <p>Dia 15 de agosto, ida das oitavas da Libertadores: 1 a 3 na Bahia. Quatro dias depois, derrota para o Vitória por 1 a 0. Foram as únicas duas derrotas seguidas do ano inteiro — mas a resposta veio rápido: 1 a 0 sobre a própria Bahia na volta, garantindo a classificação apesar do agregado apertado.</p>
+        <p>Dia 15 de agosto, ida das oitavas da Libertadores: 1 a 3 na Bahia. Quatro dias depois, derrota para o Vitória por 1 a 0 — as únicas duas partidas seguidas perdidas no ano. O 1 a 0 na volta contra a Bahia não bastou: 3 a 2 no agregado para os baianos, e o Flamengo caiu nas oitavas do torneio que tinha ganhado no ano anterior.</p>
         <p>Setembro trouxe o outro momento de turbulência: quatro jogos sem vencer entre 5 e 23 de setembro, incluindo um empate em casa com o Água Santa pela Copa do Brasil e uma derrota para o Atlético Mineiro fora.</p>
       </section>
 
@@ -1152,6 +1169,667 @@ a{color:inherit}
 </section>
 
 <!-- ============================================================
+     TEMPORADA 2030
+     ============================================================ -->
+<section class="temporada" id="t2030">
+  <div class="wrap">
+
+    <div class="eyebrow">Temporada 05 · quinto ano</div>
+    <div class="ano">2030</div>
+    <div class="clube">Clube de Regatas do Flamengo</div>
+    <div class="periodo">De 16.1.30 a 21.12.30 · a melhor temporada da saga</div>
+
+    <div class="linha-registro">
+      <div><span>J</span> <b>73</b></div>
+      <div><span>V</span> <b>54</b></div>
+      <div><span>E</span> <b>9</b></div>
+      <div><span>D</span> <b>10</b></div>
+      <div><span>GP</span> <b>185</b></div>
+      <div><span>GC</span> <b>53</b></div>
+      <div><span>Aproveitamento</span> <b>78,1%</b></div>
+      <div><span>Público médio</span> <b>67.148</b></div>
+    </div>
+
+    <div class="espinha-bloco">
+      <div class="espinha-topo">
+        <div>A espinha da temporada · 73 jogos, na ordem</div>
+        <div class="filtros" data-filtros="2030"></div>
+      </div>
+      <div class="espinha" data-espinha="2030" role="list" aria-label="Todos os jogos de 2030"></div>
+      <div class="espinha-legenda">
+        <span><i style="background:var(--verde)"></i>Vitória</span>
+        <span><i style="background:#6E6055"></i>Empate</span>
+        <span><i style="background:var(--rubro)"></i>Derrota</span>
+        <span><i style="background:var(--marfim-dim)"></i>Barra alta = decisão</span>
+        <span><i style="background:var(--ouro)"></i>Topo dourado = pênaltis</span>
+        <span>Coluna tracejada = parada de junho e julho</span>
+      </div>
+      <div class="leitura vazia" data-leitura="2030" aria-live="polite">Passe o cursor ou toque em uma barra para ler o jogo.</div>
+    </div>
+
+    <div class="trofeus">
+      <div class="trofeu ganho">
+        <div class="tag">Título</div>
+        <h3>Supercopa Rei</h3>
+        <p>6×0 no São Paulo · 3.2.30</p>
+      </div>
+      <div class="trofeu ganho">
+        <div class="tag">Título</div>
+        <h3>Campeonato Carioca</h3>
+        <p>2×1 no Vasco · 9.3.30</p>
+      </div>
+      <div class="trofeu ganho">
+        <div class="tag">Título</div>
+        <h3>Brasileirão Série A</h3>
+        <p>86 pontos · 27V 5E 6D</p>
+      </div>
+      <div class="trofeu ganho">
+        <div class="tag">Título</div>
+        <h3>Copa Libertadores</h3>
+        <p>3×1 no Cruzeiro · 84.529 pessoas</p>
+      </div>
+      <div class="trofeu ganho">
+        <div class="tag">Título</div>
+        <h3>Copa do Brasil</h3>
+        <p>1×0 na Bahia · gol de Rúben Neves</p>
+      </div>
+      <div class="trofeu perdido">
+        <div class="tag">Vice</div>
+        <h3>Copa Intercontinental</h3>
+        <p>1×2 Arsenal · o último jogo do ano</p>
+      </div>
+    </div>
+
+    <article class="narrativa">
+
+      <section class="ato">
+        <span class="eyebrow">Janeiro</span>
+        <h2>Trezentos e nove milhões em dez dias</h2>
+        <p class="abre">O ano começou com uma turnê amistosa nos Estados Unidos — 4 a 0 sobre um combinado de Los Angeles, com dois gols de Sérgio Pracidelli, a revelação da base que ganharia cada vez mais minutos ao longo do ano. Mas o verdadeiro início da temporada foi no mercado: entre 17 e 27 de janeiro, o Flamengo trouxe Éderson do Napoli por 150 milhões, Ibrahim Sangaré do Nottingham Forest por 114 e Gabriel Mec do Benfica por 45. Trezentos e nove milhões em dez dias, depois de um ano inteiro assombrado pela lembrança de Donyell Malen.</p>
+        <p>Malen, a contratação mais cara da história do clube até 2029, não entrou em campo uma única vez em 2030. Zero jogos. Gabriel Mec, comprado por menos de um terço do preço dele, terminaria o ano com 16 gols.</p>
+        <p>O Carioca começou em atropelo: 5 a 0 no Volta Redonda, 3 a 0 no Fluminense, 3 a 0 na Internacional já pela Série A. E no dia 3 de fevereiro veio a primeira taça: 6 a 0 no São Paulo na Supercopa Rei, a maior goleada em uma final da história recente do clube.</p>
+      </section>
+
+      <section class="ato">
+        <span class="eyebrow">Fevereiro e março</span>
+        <h2>O segundo troféu, e o início de dezessete</h2>
+        <p>O único tropeço do primeiro bimestre veio em 16 de fevereiro, nas quartas do Carioca: 1 a 1 com o Botafogo em Nilton Santos, vaga confirmada só na cobrança de pênaltis. No dia 9 de março, fora de casa, 2 a 1 no Vasco. Segunda taça do ano.</p>
+        <p>A final caiu no meio da maior sequência da saga inteira: dezessete vitórias consecutivas, de 23 de fevereiro a 1º de maio, dentro de vinte e sete jogos sem perder que vinham desde 16 de janeiro. Cinco meses sem uma derrota, atravessando Carioca, Série A e o grupo inteiro da Libertadores.</p>
+      </section>
+
+      <section class="ato">
+        <span class="eyebrow">Abril e maio</span>
+        <h2>Os únicos dois tropeços</h2>
+        <p>O grupo da Libertadores foi outro passeio: seis vitórias em seis contra Junior, Puerto Cabello e Bahia, com destaque para um 6 a 2 sobre o Puerto Cabello fora de casa, o jogo com mais gols do ano.</p>
+        <p>A sequência de dezessete vitórias terminou em 5 de maio, com uma derrota simples para o São Paulo. Vinte dias depois veio a única sequência ruim do ano: derrotas para o Vasco e para a Bahia, em 25 e 28 de maio — as duas únicas partidas seguidas perdidas em toda a temporada. Foi rápido: o Flamengo já tinha voltado a vencer no início de junho, com 3 a 2 no Cruzeiro.</p>
+      </section>
+
+      <section class="ato">
+        <span class="eyebrow">Julho a setembro</span>
+        <h2>Seis a zero em duas ocasiões diferentes</h2>
+        <p>Depois da parada de meio de ano, o time voltou goleando: 6 a 1 no Guarani. O caminho da Copa do Brasil seguiu sem sustos — Mirassol eliminado nas oitavas com 2 a 0 e 4 a 1 —, e a Libertadores trouxe o Peñarol nas oitavas, superado com um 3 a 0 na volta depois de um 0 a 0 na ida.</p>
+        <p>Dia 18 de setembro, outro 6 a 0, desta vez sobre o Tigre argentino nas quartas da Libertadores, com dois gols de Gabriel Mec. A vaga na semifinal veio com um 0 a 0 tranquilo na volta, uma semana depois.</p>
+      </section>
+
+      <section class="ato">
+        <span class="eyebrow">Outubro e novembro</span>
+        <h2>Duas semifinais, dois adversários, o mesmo nome</h2>
+        <p>O Internacional cruzou o caminho do Flamengo duas vezes no mesmo mês de novembro, em competições diferentes. Na semifinal da Libertadores, o Flamengo venceu a ida por 4 a 1 e perdeu a volta por 2 a 3, avançando por 6 a 4 no placar agregado. Na semifinal da Copa do Brasil, perdeu a ida por 1 a 2 e goleou a volta por 3 a 0, virando por 4 a 2 no total.</p>
+        <p>Duas eliminatórias contra o mesmo time, duas classificações — e nenhuma delas fácil.</p>
+      </section>
+
+      <section class="ato">
+        <span class="eyebrow">Dezembro</span>
+        <h2>Cinco taças, e a que escapou</h2>
+        <p>O mês começou com a confirmação do Brasileirão, no dia 1º, com 86 pontos. Dia 30 de novembro já tinha vindo a Libertadores: 3 a 1 no Cruzeiro, em campo neutro, diante de 84.529 pessoas — o maior público do ano, maior até que qualquer jogo da Série A.</p>
+        <p>Oito dias depois, 1 a 0 na Bahia com gol de Rúben Neves: Copa do Brasil também no bolso. Quatro taças confirmadas em nove dias de dezembro, cinco no total do ano.</p>
+        <p>Restava a Copa Intercontinental, com o Flamengo eliminando Tijuana (5 a 0) e Al-Taawoun (4 a 0) antes da final. Dia 18 de dezembro, contra o Arsenal: 1 a 2. A única decisão perdida do ano, na última partida da temporada, tirou do Flamengo a chance de fechar 2030 com um total perfeito.</p>
+      </section>
+
+    </article>
+
+    <p class="destaque">Cinco taças em seis decisões.<br>A que escapou foi a última partida do ano.</p>
+
+    <div class="quadros">
+
+      <div class="quadro">
+        <h3>Campanha na Série A</h3>
+        <table>
+          <tr><td>1º Flamengo</td><td>86 pts · 85:32</td></tr>
+          <tr><td>2º Vasco</td><td>82</td></tr>
+          <tr><td>3º Bahia</td><td>78</td></tr>
+          <tr><td>4º Cruzeiro</td><td>70</td></tr>
+          <tr><td>5º Palmeiras</td><td>65</td></tr>
+          <tr><td>Vantagem</td><td>4 pontos</td></tr>
+        </table>
+      </div>
+
+      <div class="quadro">
+        <h3>Quem carregou o time</h3>
+        <table>
+          <tr><td>Artilheiro geral</td><td>Pedro · 35 gols</td></tr>
+          <tr><td>Na Série A</td><td>Pedro · 21, vice-artilheiro</td></tr>
+          <tr><td>Revelação</td><td>Gabriel Mec · 16 gols, R$45M</td></tr>
+          <tr><td>Assistências</td><td>Rúben Neves · 21</td></tr>
+          <tr><td>Melhor média</td><td>Rúben Neves · 7,85</td></tr>
+          <tr><td>Homem do jogo</td><td>Rúben Neves · 8 vezes</td></tr>
+          <tr class="neg"><td>Pior disciplina</td><td>Rúben Neves · 10 amarelos, 1 vermelho</td></tr>
+        </table>
+      </div>
+
+      <div class="quadro">
+        <h3>Mercado</h3>
+        <table>
+          <tr><td>Entrou 17.1</td><td class="livre">Éderson, R$150M</td></tr>
+          <tr><td>Entrou 22.1</td><td class="livre">Ibrahim Sangaré, R$114M</td></tr>
+          <tr><td>Entrou 27.1</td><td class="livre">Gabriel Mec, R$45M</td></tr>
+          <tr><td>Entrou 12.8</td><td class="livre">Bento, R$61M</td></tr>
+          <tr class="neg"><td>Saiu 19.2</td><td>de Arrascaeta, R$1,4M</td></tr>
+          <tr class="neg"><td>Saiu 5.1</td><td>Léo Pereira, R$16,25M</td></tr>
+          <tr><td>Saldo</td><td>−370M / +17,75M</td></tr>
+        </table>
+      </div>
+
+      <div class="quadro">
+        <h3>Recordes de 2030</h3>
+        <table>
+          <tr><td>Maior vitória</td><td>6×0 São Paulo, Supercopa · 3.2</td></tr>
+          <tr><td>Maior derrota</td><td>1×3 Água Santa · 19.10</td></tr>
+          <tr><td>Sem perder</td><td>27 · 16.1 a 1.5</td></tr>
+          <tr><td>Sem ganhar</td><td>2 · 25.5 a 28.5</td></tr>
+          <tr><td>Vitórias seguidas</td><td>17 · 23.2 a 1.5</td></tr>
+          <tr><td>Derrotas seguidas</td><td>2 · 25.5 a 28.5</td></tr>
+          <tr><td>Maior público</td><td>84.529 · final da Libertadores</td></tr>
+        </table>
+      </div>
+
+      <div class="quadro">
+        <h3>O fim de duas eras</h3>
+        <table>
+          <tr><td>Giorgian de Arrascaeta</td><td>vendido por R$1,4M</td></tr>
+          <tr><td>Léo Pereira</td><td>vendido por R$16,25M</td></tr>
+          <tr><td>Donyell Malen</td><td>zero jogos em 2030</td></tr>
+          <tr><td>Sadio Mané, 38 anos</td><td>5 jogos, 1 gol</td></tr>
+          <tr><td class="nota" colspan="2">Arrascaeta, ídolo desde antes do início desta gestão, saiu por valor simbólico aos 36 anos. Mané, capitão nos anos de ouro, já mal entra em campo.</td></tr>
+        </table>
+      </div>
+
+      <div class="quadro">
+        <h3>Ficha do técnico</h3>
+        <table>
+          <tr><td>Acumulado</td><td>358 jogos</td></tr>
+          <tr><td>Vitórias</td><td>256</td></tr>
+          <tr><td>Gols</td><td>886 : 288</td></tr>
+          <tr><td>Campeonatos</td><td>8</td></tr>
+          <tr><td>Taças</td><td>8</td></tr>
+          <tr><td>Pontos do técnico</td><td>228.262</td></tr>
+          <tr><td>Caixa do clube</td><td>R$1,41 bilhão</td></tr>
+        </table>
+      </div>
+
+    </div>
+
+    <section class="balanco">
+      <h2>Balanço</h2>
+      <p>Cinco taças em seis decisões é a melhor marca das cinco temporadas. Supercopa, Carioca, Brasileirão, Libertadores e Copa do Brasil, todos vencidos — e o Internacional cruzando o caminho do clube duas vezes em novembro, em duas semifinais diferentes, perdendo as duas. Só a Copa Intercontinental escapou, na última partida do ano, contra o Arsenal.</p>
+      <p>O contraste do mercado não podia ser maior. Três contratações somando 309 milhões em dez dias de janeiro — Éderson, Sangaré e Gabriel Mec — e o retrato do ano passado, Donyell Malen, sem jogar um minuto sequer. Gabriel Mec, o mais barato dos três, terminou como o achado do ano: 16 gols na estreia. Rúben Neves, que já vinha sendo decisivo desde 2028, tornou-se o nome do meio-campo: 21 assistências, melhor nota do elenco e o gol que decidiu a Copa do Brasil.</p>
+      <p>E o ano também marcou uma virada de geração. Arrascaeta, capitão histórico, foi vendido por valor simbólico. Léo Pereira, zagueiro desde o início da gestão, também deixou o clube. Sadio Mané, artilheiro de 2026 e 2027, jogou cinco vezes.</p>
+      <div class="assinatura">
+        Fechamento da temporada 2030 · elenco de 33 jogadores · idade média 29,30 na equipe principal<br>
+        Pendências para 2031: Mané, Rossi e Pulgar em fim de contrato, futuro de Malen (ainda no elenco, sem minutos), consolidação do trio Éderson-Sangaré-Gabriel Mec.
+      </div>
+    </section>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     TEMPORADA 2031
+     ============================================================ -->
+<section class="temporada" id="t2031">
+  <div class="wrap">
+
+    <div class="eyebrow">Temporada 06 · sexto ano</div>
+    <div class="ano">2031</div>
+    <div class="clube">Clube de Regatas do Flamengo</div>
+    <div class="periodo">De 15.1.31 a 7.12.31 · o ano mais dominante na Série A</div>
+
+    <div class="linha-registro">
+      <div><span>J</span> <b>71</b></div>
+      <div><span>V</span> <b>55</b></div>
+      <div><span>E</span> <b>11</b></div>
+      <div><span>D</span> <b>5</b></div>
+      <div><span>GP</span> <b>168</b></div>
+      <div><span>GC</span> <b>40</b></div>
+      <div><span>Aproveitamento</span> <b>82,6%</b></div>
+      <div><span>Público médio</span> <b>67.308</b></div>
+    </div>
+
+    <div class="espinha-bloco">
+      <div class="espinha-topo">
+        <div>A espinha da temporada · 71 jogos, na ordem</div>
+        <div class="filtros" data-filtros="2031"></div>
+      </div>
+      <div class="espinha" data-espinha="2031" role="list" aria-label="Todos os jogos de 2031"></div>
+      <div class="espinha-legenda">
+        <span><i style="background:var(--verde)"></i>Vitória</span>
+        <span><i style="background:#6E6055"></i>Empate</span>
+        <span><i style="background:var(--rubro)"></i>Derrota</span>
+        <span><i style="background:var(--marfim-dim)"></i>Barra alta = decisão</span>
+        <span><i style="background:var(--ouro)"></i>Topo dourado = pênaltis</span>
+        <span>Coluna tracejada = parada de junho e julho</span>
+      </div>
+      <div class="leitura vazia" data-leitura="2031" aria-live="polite">Passe o cursor ou toque em uma barra para ler o jogo.</div>
+    </div>
+
+    <div class="trofeus">
+      <div class="trofeu ganho">
+        <div class="tag">Título</div>
+        <h3>Supercopa Rei</h3>
+        <p>4×2 no Vasco · 2.2.31</p>
+      </div>
+      <div class="trofeu ganho">
+        <div class="tag">Título</div>
+        <h3>Recopa Sudamericana</h3>
+        <p>2×1 e 3×0 no Santos · 27.2.31</p>
+      </div>
+      <div class="trofeu ganho">
+        <div class="tag">Título</div>
+        <h3>Brasileirão Série A</h3>
+        <p>93 pontos · 29V 6E 3D · 82:24</p>
+      </div>
+      <div class="trofeu ganho">
+        <div class="tag">Título</div>
+        <h3>Copa do Brasil</h3>
+        <p>1×0 no CRB · gol de Lorran · 7.12.31</p>
+      </div>
+      <div class="trofeu perdido">
+        <div class="tag">Vice</div>
+        <h3>Campeonato Carioca</h3>
+        <p>1×1 com o Vasco, pênaltis · 8.3.31</p>
+      </div>
+      <div class="trofeu perdido">
+        <div class="tag">Semifinal</div>
+        <h3>Copa Libertadores</h3>
+        <p>1×1 e 0×1 com o Santos · 1×2 no agregado</p>
+      </div>
+    </div>
+
+    <article class="narrativa">
+
+      <section class="ato">
+        <span class="eyebrow">Janeiro</span>
+        <h2>O achado do ano vendido no primeiro dia</h2>
+        <p class="abre">No dia 1º de janeiro de 2031 o Flamengo vendeu Gabriel Mec para o Internacional por 150 milhões de reais. Doze meses antes ele tinha custado 45 milhões e feito 16 gols na estreia, o melhor negócio da gestão. No mesmo dia Ângelo saiu para o Benfica por 45 milhões. O clube abriu o ano com 195 milhões em caixa e nenhuma contratação para anunciar.</p>
+        <p>Não houve reforço em janeiro, nem em fevereiro, nem no meio do ano. O único jogador comprado em 2031 chegou em 20 de julho: Kerem Aktürkoglu, do Fenerbahçe, por 9,5 milhões. Bernardo Lima veio de graça do Porto em agosto. Nove milhões e meio gastos contra 204 milhões arrecadados — o saldo mais folgado de todas as seis temporadas, e o elenco mais enxuto também: 28 jogadores.</p>
+        <p>A resposta em campo veio imediata. O Carioca começou com 4 a 0 no Volta Redonda, e do dia 15 de janeiro até 1º de março o time venceu catorze partidas seguidas, a segunda maior sequência de vitórias da saga.</p>
+      </section>
+
+      <section class="ato">
+        <span class="eyebrow">Fevereiro</span>
+        <h2>Duas taças em vinte e cinco dias</h2>
+        <p>Dia 2 de fevereiro, campo neutro, Supercopa Rei contra o Vasco: 4 a 2, gols de Rúben Neves, Milinkovic-Savic, Gabriel Sara e Lorran. Primeira taça do ano na terceira semana de temporada.</p>
+        <p>A Recopa Sudamericana veio contra o Santos, o mesmo adversário que voltaria a aparecer em outubro em circunstância bem diferente. No Maracanã, 2 a 1. Na Vila, 3 a 0, com dois de Leonardo Fajardo. Duas decisões, duas taças, e o time ainda sem ter perdido um jogo sequer no ano.</p>
+      </section>
+
+      <section class="ato">
+        <span class="eyebrow">Março</span>
+        <h2>A única decisão que escapou</h2>
+        <p>O Carioca chegou à final com o Fluminense despachado por 2 a 1 e 4 a 0 na semifinal. Do outro lado, o Vasco, já derrotado três vezes na temporada — 4 a 1 na fase de grupos e 4 a 2 na Supercopa.</p>
+        <p>Dia 8 de março, 35.575 pessoas, 1 a 1 com gol de Sangaré. O jogo foi para os pênaltis e o Flamengo perdeu. Foi o único jogo decisivo perdido em 2031, e encerrou a sequência de catorze vitórias sem que o time tivesse sido batido dentro dos noventa minutos.</p>
+      </section>
+
+      <section class="ato">
+        <span class="eyebrow">Abril e maio</span>
+        <h2>Vinte e oito jogos sem perder, e cinco gols do português</h2>
+        <p>Dia 1º de abril, na Venezuela, 6 a 0 no Puerto Cabello pela fase de grupos da Libertadores. Leonardo Fajardo fez cinco. Ele tinha 24 anos, ganhava 30,5 mil reais por mês — o menor salário do elenco — e terminaria o ano como artilheiro do Brasileirão.</p>
+        <p>Dia 30 de abril, 7 a 0 no América Mineiro pela quinta eliminatória da Copa do Brasil, a maior goleada do ano. Era o vigésimo oitavo jogo consecutivo sem derrota, contando desde a estreia em 15 de janeiro. Três meses e meio de temporada sem perder.</p>
+        <p>A conta chegou em 3 de maio, em São Januário: 0 a 2 para o Vasco. Vinte e quatro dias depois, no mesmo estádio, 1 a 2 na última rodada do grupo da Libertadores. Foram as duas primeiras derrotas do ano e as duas vieram do mesmo adversário, no mesmo lugar.</p>
+      </section>
+
+      <section class="ato">
+        <span class="eyebrow">Agosto e setembro</span>
+        <h2>Oitenta e quatro mil pessoas no Monumental</h2>
+        <p>A Libertadores seguiu limpa nos mata-matas: Santa Fe eliminado por 2 a 0 e 4 a 0 nas oitavas, com Pedro fazendo três na volta. Nas quartas veio o River, na Argentina, em 17 de setembro: 4 a 0 diante de 84.557 pessoas, o maior público que o time enfrentou em 2031. A volta foi 1 a 0, gol de Fajardo.</p>
+        <p>Na Copa do Brasil, o Palmeiras foi o adversário das quartas. Empate sem gols no Maracanã, com 53.396 pagantes — o menor público em casa no ano — e 4 a 0 em São Paulo, com três de Pedro. Aos 34 anos, ele fez 27 gols na temporada e passou a marca de 197 pelo clube.</p>
+      </section>
+
+      <section class="ato">
+        <span class="eyebrow">Outubro e novembro</span>
+        <h2>O Santos que perdeu quatro vezes e passou</h2>
+        <p>Entre 22 de outubro e 5 de novembro o Flamengo passou cinco jogos sem vencer, a pior sequência do ano. Dentro dela estavam as duas partidas da semifinal da Libertadores contra o Santos: 1 a 1 no Maracanã e 0 a 1 na Vila Belmiro. Eliminado por 2 a 1 no agregado.</p>
+        <p>O Santos tinha perdido para o Flamengo quatro vezes em 2031 — duas na Recopa, em fevereiro, e duas na Série A, ambas por 1 a 0. Passou mesmo assim, na única eliminatória que interessava.</p>
+        <p>A resposta foi o título brasileiro. Dia 11 de novembro, 4 a 0 no Corinthians no Maracanã, com três de Fajardo, e o Brasileirão confirmado com rodadas de sobra. O time fechou a competição com 93 pontos, 82 gols marcados e 24 sofridos, vinte pontos à frente do Cruzeiro. Foi a campanha mais folgada das seis temporadas.</p>
+      </section>
+
+      <section class="ato">
+        <span class="eyebrow">Dezembro</span>
+        <h2>Uma final contra um time rebaixado</h2>
+        <p>O Bragantino foi superado na semifinal da Copa do Brasil com 0 a 0 em casa e 3 a 2 fora, virada construída com gols de Sara e Lino e um contra de Luan Patrick. Do outro lado da chave sobrou o CRB, que terminaria a Série A em décimo oitavo lugar e rebaixado, com 31 pontos.</p>
+        <p>Dia 7 de dezembro, campo neutro, 62.540 pessoas: 1 a 0, gol de Lorran. Quarta taça do ano, e a nona de campeonato na ficha do técnico. Foi o último jogo da temporada.</p>
+      </section>
+
+    </article>
+
+    <p class="destaque">Quatro títulos em setenta e um jogos.<br>A única decisão perdida foi nos pênaltis, em março.</p>
+
+    <div class="quadros">
+
+      <div class="quadro">
+        <h3>Campanha na Série A</h3>
+        <table>
+          <tr><td>1º Flamengo</td><td>93 pts · 82:24</td></tr>
+          <tr><td>2º Cruzeiro</td><td>73</td></tr>
+          <tr><td>3º Juventude</td><td>67</td></tr>
+          <tr><td>4º Bahia</td><td>66</td></tr>
+          <tr><td>5º Palmeiras</td><td>65</td></tr>
+          <tr><td>Vantagem</td><td>20 pontos</td></tr>
+        </table>
+      </div>
+
+      <div class="quadro">
+        <h3>Quem carregou o time</h3>
+        <table>
+          <tr><td>Artilheiro geral</td><td>Leonardo Fajardo · 40 gols</td></tr>
+          <tr><td>Na Série A</td><td>Fajardo · 26, artilheiro</td></tr>
+          <tr><td>Segundo artilheiro</td><td>Pedro · 27 gols, aos 34 anos</td></tr>
+          <tr><td>Assistências</td><td>Gabriel Sara · 14</td></tr>
+          <tr><td>Melhor média</td><td>Fajardo · 7,93</td></tr>
+          <tr><td>Homem do jogo</td><td>Fajardo · 9 vezes</td></tr>
+          <tr class="neg"><td>Pior disciplina</td><td>Nehuén Pérez · 15 amarelos, 1 vermelho</td></tr>
+        </table>
+      </div>
+
+      <div class="quadro">
+        <h3>Mercado</h3>
+        <table>
+          <tr class="neg"><td>Saiu 1.1</td><td>Gabriel Mec, R$150M</td></tr>
+          <tr class="neg"><td>Saiu 1.1</td><td>Ângelo, R$45M</td></tr>
+          <tr class="neg"><td>Saiu 17.8</td><td>Juan Hugo, R$9,25M</td></tr>
+          <tr><td>Entrou 20.7</td><td class="livre">Kerem Aktürkoglu, R$9,5M</td></tr>
+          <tr><td>Entrou 5.8</td><td class="livre">Bernardo Lima, livre</td></tr>
+          <tr><td>Saldo</td><td>−9,5M / +204M</td></tr>
+        </table>
+      </div>
+
+      <div class="quadro">
+        <h3>Recordes de 2031</h3>
+        <table>
+          <tr><td>Maior vitória</td><td>7×0 América (MG), Copa do Brasil · 30.4</td></tr>
+          <tr><td>Maior derrota</td><td>0×2 Vasco, Série A · 3.5</td></tr>
+          <tr><td>Sem perder</td><td>28 · 15.1 a 30.4</td></tr>
+          <tr><td>Sem ganhar</td><td>5 · 22.10 a 5.11</td></tr>
+          <tr><td>Vitórias seguidas</td><td>14 · 15.1 a 1.3</td></tr>
+          <tr><td>Derrotas seguidas</td><td>2 · 26.10 a 29.10</td></tr>
+          <tr><td>Maior público</td><td>84.557 · River, quartas da Libertadores</td></tr>
+          <tr><td>Maior público em casa</td><td>76.800 · Vasco, Libertadores · 22.4</td></tr>
+        </table>
+      </div>
+
+      <div class="quadro">
+        <h3>Fim de linha</h3>
+        <table>
+          <tr><td>Donyell Malen</td><td>4 jogos, valor de R$550K</td></tr>
+          <tr><td>Agustín Rossi</td><td>dispensado em 9.12</td></tr>
+          <tr><td>Erick Pulgar</td><td>liberado ao Figueirense</td></tr>
+          <tr><td>Léo Ortiz</td><td>liberado ao Goiás</td></tr>
+          <tr><td>Idade média</td><td>30,40 na equipe principal</td></tr>
+          <tr><td class="nota" colspan="2">Malen, a contratação mais cara da história do clube em 2029, encerrou dois anos com seis partidas e um valor de mercado de 550 mil reais. Rossi e Pulgar, remanescentes do elenco de 2026, saíram sem custo.</td></tr>
+        </table>
+      </div>
+
+      <div class="quadro">
+        <h3>Ficha do técnico</h3>
+        <table>
+          <tr><td>Acumulado</td><td>429 jogos</td></tr>
+          <tr><td>Vitórias</td><td>311</td></tr>
+          <tr><td>Gols</td><td>1054 : 328</td></tr>
+          <tr><td>Campeonatos</td><td>9</td></tr>
+          <tr><td>Taças</td><td>11</td></tr>
+          <tr><td>Pontos do técnico</td><td>167.761</td></tr>
+          <tr><td>Caixa do clube</td><td>R$1,71 bilhão</td></tr>
+        </table>
+      </div>
+
+    </div>
+
+    <section class="balanco">
+      <h2>Balanço</h2>
+      <p>2031 foi a temporada mais eficiente da saga: 82,6% de aproveitamento, cinco derrotas em setenta e um jogos, quarenta gols sofridos no ano inteiro. Na Série A foram 93 pontos e vinte de vantagem, com o Fluminense rebaixado a duas vitórias em trinta e oito rodadas e o CRB, décimo oitavo colocado, chegando à final da Copa do Brasil contra o Flamengo.</p>
+      <p>Foi também o primeiro ano sem investimento. Nenhuma contratação em janeiro, 9,5 milhões gastos em doze meses e 204 arrecadados, com Gabriel Mec vendido no primeiro dia útil por 150 milhões depois de uma única temporada. Quem ocupou o espaço veio de dentro: Leonardo Fajardo, 24 anos e o menor salário do elenco, fez 40 gols e foi artilheiro do Brasileirão. Sérgio Pracidelli, aos 20, fez seis em quinze aparições. Bento e Wesley entraram na Seleção do Ano da Série A.</p>
+      <p>O que escapou tem dois nomes. O Vasco, que perdeu quatro confrontos no ano e mesmo assim tirou o Carioca nos pênaltis e aplicou as duas únicas derrotas do primeiro semestre, as duas em São Januário. E o Santos, batido quatro vezes entre fevereiro e setembro, que eliminou o Flamengo na semifinal da Libertadores por um gol de diferença. Contra os dois times que mais perderam para o clube, ficaram as duas decisões que não vieram.</p>
+      <div class="assinatura">
+        Fechamento da temporada 2031 · elenco de 28 jogadores · idade média 30,40 na equipe principal<br>
+        Pendências para 2032: o elenco mais velho da saga, com Milinkovic-Savic aos 36, Neves aos 34, Pedro e Pepê aos 34; contrato de Malen vencendo em 28.12.31; renovação de Fajardo, que expira em dezembro de 2032 ainda no salário de reserva.
+      </div>
+    </section>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     TEMPORADA 2032
+     ============================================================ -->
+<section class="temporada" id="t2032">
+  <div class="wrap">
+
+    <div class="eyebrow">Temporada 07 · sétimo ano</div>
+    <div class="ano">2032</div>
+    <div class="clube">Clube de Regatas do Flamengo</div>
+    <div class="periodo">De 14.1.32 a 18.12.32 · o ano de Leonardo Fajardo</div>
+
+    <div class="linha-registro">
+      <div><span>J</span> <b>73</b></div>
+      <div><span>V</span> <b>52</b></div>
+      <div><span>E</span> <b>14</b></div>
+      <div><span>D</span> <b>7</b></div>
+      <div><span>GP</span> <b>165</b></div>
+      <div><span>GC</span> <b>57</b></div>
+      <div><span>Aproveitamento</span> <b>77,6%</b></div>
+      <div><span>Público médio</span> <b>65.291</b></div>
+    </div>
+
+    <div class="espinha-bloco">
+      <div class="espinha-topo">
+        <div>A espinha da temporada · 73 jogos, na ordem</div>
+        <div class="filtros" data-filtros="2032"></div>
+      </div>
+      <div class="espinha" data-espinha="2032" role="list" aria-label="Todos os jogos de 2032"></div>
+      <div class="espinha-legenda">
+        <span><i style="background:var(--verde)"></i>Vitória</span>
+        <span><i style="background:#6E6055"></i>Empate</span>
+        <span><i style="background:var(--rubro)"></i>Derrota</span>
+        <span><i style="background:var(--marfim-dim)"></i>Barra alta = decisão</span>
+        <span><i style="background:var(--ouro)"></i>Topo dourado = pênaltis</span>
+        <span>Coluna tracejada = parada de junho e julho</span>
+      </div>
+      <div class="leitura vazia" data-leitura="2032" aria-live="polite">Passe o cursor ou toque em uma barra para ler o jogo.</div>
+    </div>
+
+    <div class="trofeus">
+      <div class="trofeu ganho">
+        <div class="tag">Título</div>
+        <h3>Campeonato Carioca</h3>
+        <p>4×1 no Botafogo · 76.779 pessoas · 6.3.32</p>
+      </div>
+      <div class="trofeu ganho">
+        <div class="tag">Título</div>
+        <h3>Brasileirão Série A</h3>
+        <p>86 pontos · 26V 8E 4D · 71:26</p>
+      </div>
+      <div class="trofeu ganho">
+        <div class="tag">Título</div>
+        <h3>Copa Libertadores</h3>
+        <p>2×1 no Palmeiras · dois gols de Lino · 27.11.32</p>
+      </div>
+      <div class="trofeu ganho">
+        <div class="tag">Título</div>
+        <h3>Copa do Brasil</h3>
+        <p>2×0 no Corinthians · 5.12.32</p>
+      </div>
+      <div class="trofeu perdido">
+        <div class="tag">Vice</div>
+        <h3>Supercopa Rei</h3>
+        <p>0×1 Cruzeiro · 1.2.32</p>
+      </div>
+      <div class="trofeu perdido">
+        <div class="tag">Vice</div>
+        <h3>Copa Intercontinental</h3>
+        <p>3×3 Tottenham, pênaltis · 15.12.32</p>
+      </div>
+    </div>
+
+    <article class="narrativa">
+
+      <section class="ato">
+        <span class="eyebrow">Janeiro e fevereiro</span>
+        <h2>Sessenta e três milhões e uma final perdida no mesmo dia</h2>
+        <p class="abre">O Carioca abriu com 6 a 2 no Cabofriense, com quatro gols de Gabriel Sara em uma partida só, e 5 a 0 no Fluminense diante de 76.794 pessoas, o maior público do ano no Maracanã. Em 1º de fevereiro o Flamengo comprou Luiz Henrique do Atlético de Madrid por 63 milhões e, no mesmo dia, perdeu a Supercopa Rei para o Cruzeiro por 1 a 0.</p>
+        <p>Foi a primeira decisão perdida em campo neutro desde 2029 e a única derrota do primeiro trimestre. Três dias depois, 2 a 2 com o Botafogo: as duas partidas seguidas sem vitória de toda a temporada.</p>
+      </section>
+
+      <section class="ato">
+        <span class="eyebrow">Fevereiro e março</span>
+        <h2>O susto do Madureira</h2>
+        <p>Na ida da semifinal do Carioca, em 21 de fevereiro, o Flamengo perdeu por 1 a 0 para o Madureira diante de 9.961 pessoas. A volta foi 4 a 0, com três gols de Samuel Lino, e resolveu a questão em uma tarde.</p>
+        <p>A final foi contra o Botafogo em 6 de março: 4 a 1, dois gols de Leonardo Fajardo, 76.779 pagantes. Primeira taça do ano e o quinto Carioca da gestão.</p>
+      </section>
+
+      <section class="ato">
+        <span class="eyebrow">Março a maio</span>
+        <h2>Quatro derrotas, nunca duas seguidas</h2>
+        <p>O trecho mais irregular do ano veio entre março e maio: 2 a 3 com o Guarani em Campinas, 0 a 1 para o Fortaleza dentro do Maracanã, 3 a 4 para o Vasco em São Januário e 0 a 1 para a Bahia em Salvador. Quatro derrotas em dez semanas, todas na Série A.</p>
+        <p>Nenhuma delas virou sequência. O Flamengo terminou 2032 sem perder duas partidas seguidas em nenhum momento, a primeira vez que isso acontece em sete temporadas. A fase de grupos da Libertadores, com três empates em seis jogos contra Estudiantes, Aucas e Santa Fe, foi a mais tropeçada da saga, e mesmo assim passou em primeiro.</p>
+      </section>
+
+      <section class="ato">
+        <span class="eyebrow">Agosto</span>
+        <h2>Dois a quatro em Salvador, e nunca mais</h2>
+        <p>Dia 1º de agosto, nas oitavas da Copa do Brasil, o Vitória venceu por 4 a 2 em casa. Foi a maior derrota da temporada e, no papel, a chance real de eliminação: o time tinha três dias para reverter dois gols. A volta foi 3 a 0 no Maracanã.</p>
+        <p>Daquele jogo em diante o Flamengo não perdeu mais. Trinta e três partidas sem derrota, de 4 de agosto a 18 de dezembro, atravessando o segundo turno inteiro do Brasileirão, três mata-matas continentais e a Copa Intercontinental. É a maior sequência invicta das sete temporadas.</p>
+      </section>
+
+      <section class="ato">
+        <span class="eyebrow">Setembro a novembro</span>
+        <h2>O Cruzeiro cinco vezes</h2>
+        <p>O Internacional caiu nas quartas da Libertadores com dois 2 a 1, ida e volta, gols de Fajardo nas duas partidas. Depois veio o Cruzeiro, e veio de todos os lados: semifinal da Libertadores em 20 e 27 de outubro (3 a 2 e 1 a 1), semifinal da Copa do Brasil em 31 de outubro e 7 de novembro (1 a 0 e 3 a 2) e ainda um 2 a 0 pela Série A no meio, em 3 de novembro.</p>
+        <p>Cinco confrontos em dezenove dias contra o mesmo adversário, com duas vagas em final em jogo. O Flamengo ganhou quatro e empatou uma.</p>
+      </section>
+
+      <section class="ato">
+        <span class="eyebrow">Novembro e dezembro</span>
+        <h2>Três taças em quatorze dias</h2>
+        <p>O Brasileirão foi confirmado em 22 de novembro, com 86 pontos e treze de vantagem sobre o Corinthians. Cinco dias depois, em campo neutro, 2 a 1 no Palmeiras na final da Libertadores, com os dois gols de Samuel Lino. Em 5 de dezembro, 2 a 0 no Corinthians na final da Copa do Brasil.</p>
+        <p>Quatro títulos no ano, três deles em duas semanas, e o quarto ainda por decidir na Copa Intercontinental.</p>
+      </section>
+
+      <section class="ato">
+        <span class="eyebrow">Dezembro</span>
+        <h2>Três a três com o Tottenham</h2>
+        <p>O caminho até a final foi curto e amplo: 6 a 0 no Los Angeles, a maior goleada do ano, e 4 a 1 no Frontale diante de 86.537 pessoas, o maior público que o Flamengo enfrentou em qualquer temporada da saga.</p>
+        <p>Dia 15 de dezembro, contra o Tottenham: 3 a 3, gols de Lino, Lodi e Éderson, e derrota nos pênaltis. É a segunda vez em três anos que a Copa Intercontinental escapa na última decisão do ano — em 2030 foi 1 a 2 para o Arsenal.</p>
+        <p>Restava uma partida atrasada da Série A, em 18 de dezembro: 1 a 0 no Atlético Mineiro fora de casa, gol de Lino, com Milinkovic-Savic entrando em campo aos 37 anos. Foi o último jogo do ano e o trigésimo terceiro sem derrota.</p>
+      </section>
+
+    </article>
+
+    <p class="destaque">Quatro títulos e duas finais perdidas.<br>Trinta e três jogos sem perder para fechar o ano.</p>
+
+    <div class="quadros">
+
+      <div class="quadro">
+        <h3>Campanha na Série A</h3>
+        <table>
+          <tr><td>1º Flamengo</td><td>86 pts · 71:26</td></tr>
+          <tr><td>2º Corinthians</td><td>73</td></tr>
+          <tr><td>3º Santos</td><td>68</td></tr>
+          <tr><td>4º Internacional</td><td>65</td></tr>
+          <tr><td>5º Bahia</td><td>62</td></tr>
+          <tr><td>Vantagem</td><td>13 pontos</td></tr>
+        </table>
+      </div>
+
+      <div class="quadro">
+        <h3>O ano de Fajardo</h3>
+        <table>
+          <tr><td>Gols</td><td>46 em 63 jogos</td></tr>
+          <tr><td>Na Série A</td><td>23, artilheiro pelo segundo ano</td></tr>
+          <tr><td>Prêmio</td><td>Jogador do Ano da Série A</td></tr>
+          <tr><td>Homem do jogo</td><td>18 vezes</td></tr>
+          <tr><td>Classificação média</td><td>8,05 · melhor do elenco</td></tr>
+          <tr><td>Valor de mercado</td><td>R$60M para R$99M</td></tr>
+          <tr><td class="nota" colspan="2">Entrou em 2031 ganhando 30,5 mil por mês, o menor salário do elenco. Fechou 2032 com contrato até dezembro de 2036 e salário de 525 mil.</td></tr>
+        </table>
+      </div>
+
+      <div class="quadro">
+        <h3>Quem mais carregou</h3>
+        <table>
+          <tr><td>Assistências</td><td>Rúben Neves · 21</td></tr>
+          <tr><td>Samuel Lino</td><td>23 gols, os dois da final</td></tr>
+          <tr><td>Gabriel Sara</td><td>19 gols, 11 assistências</td></tr>
+          <tr><td>Milinkovic-Savic</td><td>13 gols aos 37 anos</td></tr>
+          <tr><td>Bento</td><td>60 jogos, Seleção do Ano</td></tr>
+          <tr class="neg"><td>Pior disciplina</td><td>Renan Lodi · 8 amarelos, 1 vermelho</td></tr>
+        </table>
+      </div>
+
+      <div class="quadro">
+        <h3>Mercado</h3>
+        <table>
+          <tr><td>Entrou 1.2</td><td class="livre">Luiz Henrique, R$63M</td></tr>
+          <tr><td>Entrou 20.7</td><td class="livre">José Delgado, R$15M</td></tr>
+          <tr><td>Entrou 20.7</td><td class="livre">Jhon Lucumí, livre</td></tr>
+          <tr><td>Entrou 20.7</td><td class="livre">Éder Militão, livre</td></tr>
+          <tr class="neg"><td>Saiu 12.12</td><td>Rúben Neves, dispensado</td></tr>
+          <tr><td>Saldo</td><td>−78M / nada arrecadado</td></tr>
+        </table>
+      </div>
+
+      <div class="quadro">
+        <h3>Recordes de 2032</h3>
+        <table>
+          <tr><td>Maior vitória</td><td>6×0 Los Angeles, Intercontinental · 8.12</td></tr>
+          <tr><td>Maior derrota</td><td>2×4 Vitória, Copa do Brasil · 1.8</td></tr>
+          <tr><td>Sem perder</td><td>33 · 4.8 a 18.12</td></tr>
+          <tr><td>Sem ganhar</td><td>2 · 1.2 a 4.2</td></tr>
+          <tr><td>Vitórias seguidas</td><td>9 · 22.8 a 22.9</td></tr>
+          <tr><td>Derrotas seguidas</td><td>1 · nunca perdeu duas</td></tr>
+          <tr><td>Maior público</td><td>86.537 · Frontale, Intercontinental</td></tr>
+          <tr><td>Maior público em casa</td><td>76.794 · Fluminense, Carioca · 24.1</td></tr>
+        </table>
+      </div>
+
+      <div class="quadro">
+        <h3>Ficha do técnico</h3>
+        <table>
+          <tr><td>Acumulado</td><td>502 jogos</td></tr>
+          <tr><td>Vitórias</td><td>363</td></tr>
+          <tr><td>Gols</td><td>1219 : 385</td></tr>
+          <tr><td>Campeonatos</td><td>11</td></tr>
+          <tr><td>Taças</td><td>13</td></tr>
+          <tr><td>Pontos do técnico</td><td>224.016</td></tr>
+          <tr><td>Caixa do clube</td><td>R$1,87 bilhão</td></tr>
+        </table>
+      </div>
+
+    </div>
+
+    <section class="balanco">
+      <h2>Balanço</h2>
+      <p>Quatro títulos em seis decisões, e as duas que escaparam foram as duas em jogo único: a Supercopa contra o Cruzeiro em fevereiro e a Intercontinental contra o Tottenham em dezembro, esta nos pênaltis depois de um 3 a 3. Entre uma e outra, o Flamengo ganhou Carioca, Brasileirão, Libertadores e Copa do Brasil, encarou o Cruzeiro cinco vezes em dezenove dias no segundo semestre e passou trinta e três jogos sem perder.</p>
+      <p>O ano teve um nome só. Leonardo Fajardo fez 46 gols em 63 partidas, foi artilheiro da Série A pelo segundo ano seguido, eleito o melhor jogador do campeonato e escolhido para a Seleção do Ano junto com Bento. Em 2031 ele era o jogador mais barato do elenco; em dezembro de 2032 vale 99 milhões e tem contrato até 2036.</p>
+      <p>A conta que sobrou é a idade. A equipe principal fechou com média de 31,00 anos, a mais alta da saga. Pedro chegou a 394 partidas e 205 gols pelo clube, recordes absolutos, e vale 4,9 milhões aos 35. Rúben Neves, autor de 21 assistências no ano e dono do meio-campo desde 2028, foi dispensado em 12 de dezembro sem custo. As quatro chegadas do ano custaram 78 milhões e não houve uma venda sequer.</p>
+      <div class="assinatura">
+        Fechamento da temporada 2032 · elenco de 29 jogadores · idade média 31,00 na equipe principal<br>
+        Pendências para 2033: Jean Lucas, Pepê e Rayan Lucas com contrato a curto prazo; Milinkovic-Savic aos 37 e Pedro aos 35 sem substitutos definidos; nenhuma receita de transferência em 2032 contra 78 milhões gastos.
+      </div>
+    </section>
+
+  </div>
+</section>
+
+<!-- ============================================================
      RETROSPECTO GERAL
      Calculado automaticamente a partir de TODAS as temporadas
      registradas no objeto TEMPORADAS. Ao acrescentar um ano novo,
@@ -1191,27 +1869,30 @@ a{color:inherit}
 
 <!-- ============================================================
      PRÓXIMA TEMPORADA
-     Para adicionar 2028: copie o bloco <section class="temporada">
-     inteiro acima, troque o id para t2029 e os data-espinha /
-     data-filtros / data-leitura para "2029", acrescente a linha no
-     rail do topo e adicione JOGOS_2029 ao objeto TEMPORADAS no fim
-     do arquivo.
+     Para adicionar 2033: copie o bloco da temporada inteiro acima,
+     troque o id para t2033 e os data-espinha / data-filtros /
+     data-leitura para "2033", acrescente a linha no rail do topo e
+     adicione JOGOS_2033 ao objeto TEMPORADAS no fim do arquivo.
+     A tabela de retrospecto se atualiza sozinha.
      ============================================================ -->
 <section class="proxima" id="proxima">
   <div class="wrap">
-    <div class="ano-vazio">2029</div>
+    <div class="ano-vazio">2033</div>
     <p>Ainda não jogada</p>
   </div>
 </section>
 
 <script>
-const JOGOS_2026 = [["15.1.26", "Portuguesa (RJ)", "C", "Carioca", "5:1", 72197, "Léo Pereira, Danilo, Pedro 2, Bruno Henrique"], ["18.1.26", "Nova Iguaçu", "F", "Carioca", "1:1", 7951, "Bruno Henrique"], ["24.1.26", "Fluminense", "C", "Carioca", "5:0", 76764, "Pulgar, de Arrascaeta, Pedro 2, Lucas Paquetá"], ["29.1.26", "Corinthians", "C", "Série A", "3:1", 63509, "Jorginho, Pedro, Plata"], ["1.2.26", "Corinthians", "N", "Supercopa", "1:2", 60036, "de Arrascaeta"], ["4.2.26", "Grêmio", "F", "Série A", "1:2", 50513, "Carrascal"], ["6.2.26", "Botafogo", "F", "Carioca", "0:1", 38246, ""], ["8.2.26", "Bangu", "C", "Carioca", "5:0", 68675, "Everton Cebolinha, Araújo, Luiz Araújo, Rodríguez 2"], ["11.2.26", "Athletico Paranaense", "C", "Série A", "3:0", 59466, "Bruno Henrique, Alex Sandro, Carrascal"], ["14.2.26", "Fluminense", "C", "Carioca", "3:2", 76771, "Pulgar 2, Léo Pereira"], ["19.2.26", "Lanús", "C", "Recopa", "1:0", 70381, "Carrascal"], ["21.2.26", "Vasco", "C", "Carioca", "3:2", 76784, "Carrascal 2, Ñíguez"], ["26.2.26", "Lanús", "F", "Recopa", "4:0", 18022, "Bruno Henrique 3, Pedro"], ["28.2.26", "Vasco", "F", "Carioca", "0:0", 24985, ""], ["7.3.26", "Botafogo", "F", "Carioca", "3:2", 44993, "Carrascal, Mané 2"], ["12.3.26", "São Paulo", "C", "Série A", "3:2", 65194, "Pedro pen, Pulgar, Royal"], ["14.3.26", "Chapecoense", "F", "Série A", "2:0", 8744, "Carrascal, Mané"], ["19.3.26", "Vasco", "C", "Série A", "4:2", 76795, "Mané, Carrascal, Araújo, Lino"], ["21.3.26", "Fluminense", "F", "Série A", "3:2", 63632, "Bruno Henrique, Lucas Paquetá, Lino"], ["25.3.26", "Bahia", "F", "Série A", "2:0", 44567, "Bruno Henrique, Mané"], ["1.4.26", "Coquimbo Unido", "F", "Libertadores", "3:0", 14977, "Lino 2, Plata"], ["4.4.26", "Botafogo", "F", "Série A", "4:1", 44991, "Mané, Pedro, Ñíguez, Kaio ag"], ["8.4.26", "Cerro Porteño", "C", "Libertadores", "2:0", 63187, "Pedro, de Arrascaeta pen"], ["12.4.26", "Coritiba", "C", "Série A", "2:1", 59829, "Mané, Pedro pen"], ["19.4.26", "Mirassol", "F", "Série A", "3:4", 8824, "Lino, Mané, Pulgar"], ["22.4.26", "Central", "F", "Libertadores", "1:1", 41647, "Danilo"], ["25.4.26", "Palmeiras", "C", "Série A", "0:1", 60651, ""], ["29.4.26", "Amazonas", "F", "Copa do Brasil", "1:1", 4984, "Romero"], ["2.5.26", "Internacional", "F", "Série A", "1:2", 47101, "Léo Pereira"], ["6.5.26", "Coquimbo Unido", "C", "Libertadores", "7:0", 67010, "Danilo 2, Pulgar, Mané, Jorginho, Plata, Vitão pen"], ["9.5.26", "Cruzeiro", "C", "Série A", "1:2", 58694, "Lino"], ["13.5.26", "Cerro Porteño", "F", "Libertadores", "4:0", 27995, "de Arrascaeta, Pedro, Mané, Lucas Paquetá"], ["16.5.26", "Santos", "F", "Série A", "2:2", 19210, "Pedro, Lucas Paquetá"], ["20.5.26", "Amazonas", "C", "Copa do Brasil", "2:0", 64364, "Pedro, Mané"], ["23.5.26", "Bragantino", "C", "Série A", "1:1", 56263, "Mané"], ["27.5.26", "Central", "C", "Libertadores", "2:1", 69592, "Everton Cebolinha, Jorginho"], ["31.5.26", "Vitória", "F", "Série A", "1:0", 35619, "Lucas Paquetá"], ["3.6.26", "Remo", "C", "Série A", "3:0", 64356, "de Arrascaeta, Pulgar, Bruno Henrique"], ["23.7.26", "Atlético Mineiro", "C", "Série A", "3:0", 61459, "Pedro, Jorginho, Plata"], ["26.7.26", "Corinthians", "F", "Série A", "2:2", 48910, "Fred, Mané"], ["29.7.26", "Grêmio", "C", "Série A", "1:1", 59469, "Mané"], ["2.8.26", "Moto Club", "C", "Copa do Brasil", "2:0", 64369, "Romero, Bruno Henrique"], ["5.8.26", "Moto Club", "F", "Copa do Brasil", "2:0", 21471, "Luiz Araújo 2"], ["9.8.26", "Athletico Paranaense", "F", "Série A", "5:0", 34070, "Pedro 3, de Arrascaeta 2"], ["12.8.26", "Platense", "F", "Libertadores", "4:2", 18276, "Mané 4"], ["16.8.26", "Bahia", "C", "Série A", "2:0", 61265, "Pedro, Lino"], ["19.8.26", "Platense", "C", "Libertadores", "3:0", 65762, "Jorginho, Pedro, de Arrascaeta"], ["23.8.26", "São Paulo", "F", "Série A", "4:3", 67322, "Jorginho, Mané, Carrascal, Ayrton Lucas"], ["26.8.26", "São Paulo", "F", "Copa do Brasil", "2:2", 45809, "Léo Ortiz, Pedro"], ["30.8.26", "Chapecoense", "C", "Série A", "2:0", 53259, "Jorginho, Royal"], ["2.9.26", "São Paulo", "C", "Copa do Brasil", "2:0", 56831, "Pedro 2"], ["9.9.26", "Vasco", "F", "Série A", "3:1", 24963, "Fred, Mané, Plata"], ["12.9.26", "Botafogo", "C", "Série A", "2:0", 76792, "Pedro, Jorginho"], ["16.9.26", "Boca", "F", "Libertadores", "3:0", 57177, "Alex Sandro, Ñíguez, Pedro"], ["20.9.26", "Coritiba", "F", "Série A", "2:0", 32841, "Alex Sandro, Mané"], ["23.9.26", "Boca", "C", "Libertadores", "0:0", 66987, ""], ["8.10.26", "Fluminense", "C", "Série A", "3:0", 76793, "Jorginho, Pedro, Mané"], ["14.10.26", "Remo", "F", "Série A", "2:0", 16205, "Plata, Mané"], ["17.10.26", "Internacional", "C", "Série A", "1:0", 60761, "Jorginho"], ["21.10.26", "Independiente (ECU)", "F", "Libertadores", "1:0", 11967, "Pedro"], ["25.10.26", "Palmeiras", "F", "Série A", "1:3", 40176, "Mané"], ["28.10.26", "Independiente (ECU)", "C", "Libertadores", "2:0", 67007, "Mané, Pedro"], ["1.11.26", "Bahia", "C", "Copa do Brasil", "4:1", 67261, "Pedro, Fred, Mané 2"], ["4.11.26", "Cruzeiro", "F", "Série A", "3:2", 41123, "Fred, Royal, Mané"], ["8.11.26", "Bahia", "F", "Copa do Brasil", "2:1", 42569, "Mané 2"], ["11.11.26", "Mirassol", "C", "Série A", "1:1", 53389, "Pedro"], ["19.11.26", "Santos", "C", "Série A", "4:1", 57741, "Pedro, Carrascal, Duarte ag, Jorginho"], ["21.11.26", "Bragantino", "F", "Série A", "3:4", 9023, "Ayrton Lucas, Plata, Lino"], ["28.11.26", "Corinthians", "N", "Libertadores", "0:2", 65204, ""], ["2.12.26", "Atlético Mineiro", "F", "Série A", "3:1", 47425, "Mané 2, Plata"], ["6.12.26", "Cruzeiro", "N", "Copa do Brasil", "1:3", 64833, "Plata"], ["9.12.26", "Vitória", "C", "Série A", "1:1", 62057, "Pedro"]];
-const JOGOS_2027 = [["13.1.27", "Botafogo", "F", "Carioca", "5:1", 38247, "Fred, Jorginho, de Arrascaeta 2, Ronaldo"], ["16.1.27", "Angra dos Reis", "C", "Carioca", "3:2", 53085, "Mané, Ronaldo, Carrascal"], ["23.1.27", "Fluminense", "F", "Carioca", "4:2", 23501, "Mané, de Arrascaeta, Pedro, Fred"], ["27.1.27", "Atlético Mineiro", "F", "Série A", "1:0", 47448, "Mané"], ["31.1.27", "Cruzeiro", "N", "Supercopa", "1:3", 42404, "Carrascal"], ["5.2.27", "Nova Iguaçu", "C", "Carioca", "6:1", 54652, "Ronaldo, Jorginho, Mané 4"], ["7.2.27", "Boavista (RJ)", "F", "Carioca", "4:0", 2796, "Fred, Mané, de Arrascaeta 2"], ["11.2.27", "Internacional", "F", "Série A", "2:1", 48831, "Pulgar 2"], ["13.2.27", "Fluminense", "F", "Carioca", "4:1", 23486, "Mané, Pedro, Lino 2"], ["20.2.27", "Portuguesa (RJ)", "C", "Carioca", "4:0", 76774, "Lino 2, Pulgar, Mané"], ["24.2.27", "Atlético Goianiense", "C", "Série A", "3:1", 54996, "Pedro 2 (1 pen), Mané"], ["27.2.27", "Portuguesa (RJ)", "F", "Carioca", "1:0", 11980, "Ñíguez"], ["6.3.27", "Vasco", "F", "Carioca", "1:4", 31952, "Jorginho"], ["11.3.27", "Cruzeiro", "F", "Série A", "4:0", 15367, "Fred, de Arrascaeta 3"], ["13.3.27", "Corinthians", "C", "Série A", "1:1", 64111, "Jorginho"], ["18.3.27", "Vila Nova (GO)", "F", "Série A", "4:0", 11951, "de Arrascaeta, Ronaldo 2, Fred"], ["20.3.27", "Bahia", "C", "Série A", "0:0", 62394, ""], ["31.3.27", "Peñarol", "F", "Libertadores", "2:1", 36207, "Ronaldo, Ñíguez"], ["3.4.27", "Fluminense", "C", "Série A", "1:1", 76803, "Jorginho"], ["7.4.27", "At. Grau", "C", "Libertadores", "4:0", 71003, "Pedro 2, Royal, Mané"], ["11.4.27", "São Paulo", "F", "Série A", "0:2", 67353, ""], ["17.4.27", "Santos", "C", "Série A", "3:0", 55855, "Jorginho, Ronaldo, Araújo"], ["21.4.27", "Lanús", "F", "Libertadores", "4:1", 29341, "Mané, Fred, Araújo, Ronaldo"], ["24.4.27", "Juventude", "F", "Série A", "2:1", 19315, "Mané, Ronaldo"], ["28.4.27", "Vila Nova (GO)", "F", "Copa do Brasil", "5:1", 8954, "Pedro 2 (1 pen), Ñíguez, Allan, Lino"], ["1.5.27", "Mirassol", "C", "Série A", "5:0", 56497, "de Arrascaeta 2 (1 pen), Royal, Mané, Plata"], ["5.5.27", "Peñarol", "C", "Libertadores", "1:0", 72786, "Mané"], ["9.5.27", "Bragantino", "F", "Série A", "2:1", 13045, "Fred 2"], ["12.5.27", "At. Grau", "F", "Libertadores", "5:0", 20934, "Lino, Plata 2, Romero, Pedro pen"], ["15.5.27", "Cuiabá", "C", "Série A", "3:0", 62539, "Pulgar, Mané, Varela"], ["19.5.27", "Vila Nova (GO)", "C", "Copa do Brasil", "0:0", 53448, ""], ["22.5.27", "Botafogo", "F", "Série A", "5:0", 44956, "Ronaldo 3, Allan, Mané"], ["26.5.27", "Lanús", "C", "Libertadores", "6:0", 72759, "Pedro 3, Mané, Pulgar, Tello ag"], ["29.5.27", "Vasco", "C", "Série A", "5:2", 76758, "Mané 2, Fred, Allan, Pedro pen"], ["2.6.27", "Palmeiras", "C", "Série A", "1:2", 63917, "Pedro pen"], ["9.6.27", "Grêmio", "F", "Série A", "0:0", 50504, ""], ["22.7.27", "Vitória", "F", "Série A", "1:2", 35586, "Mané"], ["24.7.27", "Atlético Mineiro", "C", "Série A", "1:1", 61602, "de Arrascaeta"], ["28.7.27", "Palmeiras", "F", "Série A", "3:0", 14898, "de Arrascaeta, Mané 2"], ["1.8.27", "Athletico Paranaense", "C", "Copa do Brasil", "2:2", 56159, "Pedro 2"], ["4.8.27", "Athletico Paranaense", "F", "Copa do Brasil", "2:0", 29484, "Martinelli, Pedro"], ["8.8.27", "Internacional", "C", "Série A", "0:1", 58854, ""], ["11.8.27", "Cruzeiro", "F", "Libertadores", "1:0", 15516, "de Arrascaeta"], ["15.8.27", "Atlético Goianiense", "F", "Série A", "6:1", 13241, "Romero, Luiz Araújo, Lino, Vitão pen, Plata 2"], ["18.8.27", "Cruzeiro", "C", "Libertadores", "4:3", 62559, "Pedro 2, Martinelli, Fred"], ["21.8.27", "Vila Nova (GO)", "C", "Série A", "2:0", 57736, "Ñíguez, Lino"], ["25.8.27", "Juventude", "F", "Copa do Brasil", "2:0", 6899, "Lino, de Arrascaeta"], ["28.8.27", "Bahia", "F", "Série A", "0:2", 46698, ""], ["1.9.27", "Juventude", "C", "Copa do Brasil", "1:1", 53452, "Fred"], ["11.9.27", "Corinthians", "F", "Série A", "2:3", 49411, "Pedro, Mané"], ["15.9.27", "Vasco", "F", "Libertadores", "3:0", 31957, "Romero 2, Pulgar"], ["19.9.27", "São Paulo", "C", "Série A", "1:1", 68797, "Pedro"], ["22.9.27", "Vasco", "C", "Libertadores", "3:1", 76770, "Mané, João Victor pen, Løvik"], ["29.9.27", "Cruzeiro", "C", "Série A", "4:1", 59186, "Pedro pen, Pulgar, Plata, Martinelli"], ["7.10.27", "Santos", "F", "Série A", "2:0", 23018, "Lino 2"], ["17.10.27", "Fluminense", "F", "Série A", "0:1", 22293, ""], ["20.10.27", "Palmeiras", "F", "Libertadores", "2:4", 13388, "Pedro, Lino"], ["24.10.27", "Bragantino", "C", "Série A", "3:1", 58659, "Carrascal, Romero 2"], ["27.10.27", "Palmeiras", "C", "Libertadores", "1:0", 62912, "Pedro"], ["31.10.27", "Corinthians", "C", "Copa do Brasil", "3:1", 69467, "Mané 2, Royal"], ["3.11.27", "Juventude", "C", "Série A", "3:1", 58895, "Lino, Pulgar pen, Romero"], ["7.11.27", "Corinthians", "F", "Copa do Brasil", "2:0", 48936, "Martinelli, Lino"], ["10.11.27", "Grêmio", "C", "Série A", "1:0", 66154, "Lino"], ["16.11.27", "Mirassol", "F", "Série A", "6:1", 10845, "Pulgar, Mané, Plata, Vitão pen, Martinelli, Lino"], ["21.11.27", "Botafogo", "C", "Série A", "3:0", 76764, "Romero, Pedro, Plata"], ["25.11.27", "Cuiabá", "F", "Série A", "0:0", 28123, ""], ["27.11.27", "Vasco", "F", "Série A", "3:2", 31951, "Pedro 2, Pulgar"], ["1.12.27", "Vitória", "C", "Série A", "1:0", 67927, "Carrascal"], ["5.12.27", "Palmeiras", "N", "Copa do Brasil", "1:2", 55978, "Pedro"]];
-const JOGOS_2028 = [["12.1.28", "Angra dos Reis", "C", "Carioca", "4:0", 54380, "Mané, Pedro 2, Neves"], ["15.1.28", "Botafogo", "F", "Carioca", "0:0", 38210, ""], ["22.1.28", "Fluminense", "C", "Carioca", "6:1", 76058, "Pedro 2 (1 pen), Royal, Neves, Lino 2"], ["26.1.28", "Athletico Paranaense", "C", "Série A", "5:0", 66751, "Pedro 3 (1 pen), Milinkovic-Savic, Mané"], ["29.1.28", "Cabofriense", "F", "Carioca", "6:0", 6257, "Lino 3, Jorginho, Danilo, Alex Sandro"], ["2.2.28", "Santos", "F", "Série A", "2:0", 23715, "Pedro 2"], ["6.2.28", "Maricá", "C", "Carioca", "5:0", 64362, "Jorginho 2, Carrascal, Lino, Plata"], ["9.2.28", "Bragantino", "C", "Série A", "4:0", 61183, "Milinkovic-Savic 2, R.Neves 2"], ["12.2.28", "Fluminense", "C", "Carioca", "3:0", 76056, "Lino, Neves, Mané"], ["19.2.28", "Nova Iguaçu", "F", "Carioca", "3:0", 7995, "Fred, Carrascal, Mané"], ["24.2.28", "Grêmio", "F", "Série A", "4:2", 18776, "Lino 2, Mané 2"], ["26.2.28", "Nova Iguaçu", "C", "Carioca", "1:0", 55199, "Plata"], ["9.3.28", "Bahia", "C", "Série A", "3:3", 69956, "Neves, Mané, Pedro"], ["11.3.28", "Vasco", "C", "Carioca", "2:0", 76757, "Pedro, de Arrascaeta"], ["16.3.28", "Amazonas", "C", "Série A", "4:0", 74979, "Pedro, de Arrascaeta 2, Mané"], ["18.3.28", "Cruzeiro", "F", "Série A", "5:1", 18823, "Pedro 3, Royal, de Arrascaeta"], ["30.3.28", "Vitória", "C", "Série A", "1:0", 69808, "de Arrascaeta"], ["1.4.28", "Internacional", "F", "Série A", "1:3", 48828, "Pedro pen"], ["5.4.28", "At. Grau", "F", "Libertadores", "4:0", 20922, "Pedro, Løvik, Milinkovic-Savic, Neves"], ["9.4.28", "Coritiba", "C", "Série A", "5:0", 68655, "Pedro 2 (1 pen), Neves, Løvik, Milinkovic-Savic"], ["12.4.28", "Tigre", "C", "Libertadores", "3:0", 71400, "Milinkovic-Savic, Mané, Lino"], ["15.4.28", "Fluminense", "F", "Série A", "3:1", 25901, "Pedro, Martinelli, Mané"], ["23.4.28", "Goiás", "C", "Série A", "4:0", 62939, "Løvik, Lino 2, de Arrascaeta pen"], ["26.4.28", "Lanús", "F", "Libertadores", "3:0", 31228, "de Arrascaeta, Mané, Lino"], ["30.4.28", "Vasco", "F", "Série A", "1:1", 31959, "Plata"], ["3.5.28", "Athletico Paranaense", "F", "Copa do Brasil", "0:1", 29621, ""], ["6.5.28", "Botafogo", "C", "Série A", "1:1", 76771, "Pedro"], ["10.5.28", "At. Grau", "C", "Libertadores", "4:0", 72794, "Carrascal, Lino 2, Pulgar"], ["14.5.28", "Atlético Mineiro", "F", "Série A", "1:2", 47461, "Plata"], ["17.5.28", "Tigre", "F", "Libertadores", "3:0", 22846, "Jorginho, Rayan Lucas, Carrascal pen"], ["20.5.28", "São Paulo", "C", "Série A", "1:2", 72189, "Jorginho"], ["24.5.28", "Athletico Paranaense", "C", "Copa do Brasil", "6:1", 54585, "Pedro 4, Royal, Milinkovic-Savic"], ["27.5.28", "Palmeiras", "F", "Série A", "1:0", 14581, "Milinkovic-Savic"], ["31.5.28", "Lanús", "C", "Libertadores", "0:0", 72767, ""], ["7.6.28", "Corinthians", "F", "Série A", "2:1", 49405, "Pedro, Lino"], ["20.7.28", "Juventude", "C", "Série A", "1:0", 65135, "de Arrascaeta"], ["22.7.28", "Athletico Paranaense", "F", "Série A", "6:1", 35747, "Løvik, Lino 4, Pedro"], ["26.7.28", "Santos", "C", "Série A", "2:0", 64315, "Pedro 2 pens"], ["6.8.28", "Botafogo", "C", "Copa do Brasil", "3:0", 76757, "Pedro, Mané, Neves"], ["9.8.28", "Botafogo", "F", "Copa do Brasil", "0:2", 38211, ""], ["13.8.28", "Grêmio", "C", "Série A", "2:0", 63308, "Léo Ortiz, Martinelli"], ["16.8.28", "Lanús", "F", "Libertadores", "2:0", 30398, "Pedro, Plata"], ["20.8.28", "Bahia", "F", "Série A", "2:1", 44576, "Pedro pen, Martinelli"], ["23.8.28", "Lanús", "C", "Libertadores", "3:0", 72793, "Milinkovic-Savic 2, Plata"], ["26.8.28", "Cruzeiro", "C", "Série A", "2:0", 65928, "Pedro 2"], ["30.8.28", "Bragantino", "F", "Série A", "3:0", 13057, "Fabinho ag, Pedro 2"], ["2.9.28", "Vitória", "F", "Série A", "4:2", 35632, "Pedro 3 (1 pen), Milinkovic-Savic"], ["6.9.28", "Vitória", "F", "Copa do Brasil", "3:2", 29814, "Milinkovic-Savic, Pedro, Martinelli"], ["10.9.28", "Corinthians", "C", "Série A", "2:1", 68402, "Martinelli, Pedro"], ["13.9.28", "Vitória", "C", "Copa do Brasil", "3:1", 56437, "Mané, Pedro pen, Pepê"], ["17.9.28", "Amazonas", "F", "Série A", "3:1", 8674, "Jorginho, Pedro, Løvik"], ["20.9.28", "Palmeiras", "F", "Libertadores", "2:3", 17957, "Pedro, Pulgar"], ["27.9.28", "Palmeiras", "C", "Libertadores", "3:0", 63213, "Pulgar, Pedro, Royal"], ["4.10.28", "Fluminense", "C", "Série A", "3:1", 76759, "Lino, Pepê, Martinelli"], ["7.10.28", "Goiás", "F", "Série A", "2:2", 19772, "Neves, Pepê"], ["15.10.28", "Internacional", "C", "Série A", "1:0", 66595, "Pepê"], ["22.10.28", "Coritiba", "F", "Série A", "1:0", 32826, "Fred"], ["25.10.28", "São Paulo", "C", "Libertadores", "3:0", 71458, "Mané 2, Martinelli"], ["1.11.28", "São Paulo", "F", "Libertadores", "2:1", 67353, "Martinelli, Pedro"], ["5.11.28", "Corinthians", "C", "Copa do Brasil", "2:1", 69559, "Neves, de Arrascaeta"], ["8.11.28", "Vasco", "C", "Série A", "4:1", 76770, "Mané, Neves, Lino, Pepê"], ["12.11.28", "Corinthians", "F", "Copa do Brasil", "1:1", 48943, "Pedro"], ["14.11.28", "Botafogo", "F", "Série A", "2:1", 44990, "Pepê, Lino"], ["19.11.28", "São Paulo", "F", "Série A", "2:1", 67363, "Pedro pen, Lino"], ["29.11.28", "Palmeiras", "C", "Série A", "1:2", 61500, "Lino"], ["2.12.28", "Corinthians", "N", "Libertadores", "2:1", 84535, "Pedro 2"], ["5.12.28", "Juventude", "F", "Série A", "1:1", 19968, "Martinelli"], ["8.12.28", "Atlético Mineiro", "C", "Série A", "4:1", 67016, "Jorginho 2, Araújo, Lino"], ["10.12.28", "Internacional", "N", "Copa do Brasil", "2:2", 68006, "Martinelli, Pedro pen"], ["13.12.28", "Cruz Azul", "N", "Intercontinental", "3:0", 59994, "Pepê 2, Pedro"], ["16.12.28", "Tractor", "N", "Intercontinental", "4:0", 88927, "Pedro 2, Milinkovic-Savic, Mané"], ["20.12.28", "PSG", "N", "Intercontinental", "2:3", 45388, "Mané, Milinkovic-Savic"]];
-const JOGOS_2029 = [["17.1.29", "Cabofriense", "C", "Carioca", "4:0", 0, ""], ["20.1.29", "Maricá", "N", "Carioca", "7:0", 0, ""], ["27.1.29", "Fluminense", "C", "Carioca", "5:0", 0, ""], ["31.1.29", "Juventude", "F", "Série A", "3:1", 0, ""], ["4.2.29", "Cruzeiro", "N", "Supercopa", "1:0", 0, ""], ["7.2.29", "Fortaleza", "C", "Série A", "0:0", 0, ""], ["9.2.29", "Bangu", "F", "Carioca", "3:1", 0, ""], ["11.2.29", "Goytacaz", "C", "Carioca", "4:0", 0, ""], ["15.2.29", "Vasco", "C", "Série A", "2:0", 0, ""], ["17.2.29", "Cabofriense", "C", "Carioca", "2:0", 0, ""], ["22.2.29", "Atlético Mineiro", "C", "Recopa", "3:0", 0, ""], ["24.2.29", "Botafogo", "F", "Carioca", "0:1", 0, ""], ["1.3.29", "Atlético Mineiro", "F", "Recopa", "2:1", 0, ""], ["3.3.29", "Botafogo", "C", "Carioca", "2:0", 0, ""], ["10.3.29", "Fluminense", "F", "Carioca", "2:1", 0, ""], ["14.3.29", "Guarani", "C", "Série A", "5:2", 0, ""], ["18.3.29", "Athletico", "F", "Série A", "7:0", 0, ""], ["25.3.29", "Santos", "F", "Série A", "2:1", 0, ""], ["3.4.29", "Estudiantes (LP)", "C", "Libertadores", "3:0", 0, ""], ["7.4.29", "Corinthians", "F", "Série A", "2:2", 0, ""], ["10.4.29", "Anzoátegui", "F", "Libertadores", "3:0", 0, ""], ["15.4.29", "Ceará", "C", "Série A", "3:0", 0, ""], ["18.4.29", "Atlético Mineiro", "C", "Série A", "0:1", 0, ""], ["21.4.29", "Atlético Goianiense", "F", "Série A", "5:0", 0, ""], ["24.4.29", "Olimpia", "C", "Libertadores", "3:0", 0, ""], ["29.4.29", "Cruzeiro", "C", "Série A", "3:2", 0, ""], ["2.5.29", "Botafogo", "F", "Copa do Brasil", "4:0", 0, ""], ["5.5.29", "Fluminense", "F", "Série A", "2:2", 0, ""], ["8.5.29", "Estudiantes (LP)", "F", "Libertadores", "3:1", 0, ""], ["12.5.29", "Bahia", "C", "Série A", "1:0", 0, ""], ["15.5.29", "Anzoátegui", "C", "Libertadores", "4:0", 0, ""], ["20.5.29", "Palmeiras", "F", "Série A", "2:0", 0, ""], ["23.5.29", "Botafogo", "C", "Copa do Brasil", "2:0", 0, ""], ["26.5.29", "Botafogo", "C", "Série A", "0:1", 0, ""], ["29.5.29", "Olimpia", "F", "Libertadores", "4:0", 0, ""], ["3.6.29", "Internacional", "F", "Série A", "1:2", 0, ""], ["20.6.29", "Man Utd", "N", "Mundial de Clubes", "2:0", 0, ""], ["24.6.29", "Galatasaray", "N", "Mundial de Clubes", "4:1", 0, ""], ["28.6.29", "Água Santa", "N", "Mundial de Clubes", "1:1", 0, ""], ["3.7.29", "Al-Ahli (KSA)", "N", "Mundial de Clubes", "1:1", 0, ""], ["7.7.29", "Cruzeiro", "N", "Mundial de Clubes", "1:3", 0, ""], ["11.7.29", "Bragantino", "C", "Série A", "2:0", 0, ""], ["25.7.29", "São Paulo", "C", "Série A", "3:1", 0, ""], ["29.7.29", "Guarani", "F", "Série A", "1:0", 0, ""], ["1.8.29", "Fortaleza", "F", "Série A", "6:0", 0, ""], ["5.8.29", "Remo", "C", "Copa do Brasil", "3:0", 0, ""], ["8.8.29", "Remo", "F", "Copa do Brasil", "4:1", 0, ""], ["12.8.29", "Juventude", "C", "Série A", "3:1", 0, ""], ["15.8.29", "Bahia", "F", "Libertadores", "1:3", 0, ""], ["19.8.29", "Vitória", "C", "Série A", "0:1", 0, ""], ["22.8.29", "Bahia", "C", "Libertadores", "1:0", 0, ""], ["26.8.29", "Bragantino", "F", "Série A", "2:1", 0, ""], ["29.8.29", "Água Santa", "C", "Copa do Brasil", "2:0", 0, ""], ["2.9.29", "Athletico", "C", "Série A", "2:0", 0, ""], ["5.9.29", "Água Santa", "F", "Copa do Brasil", "2:2", 0, ""], ["9.9.29", "Vasco", "F", "Série A", "1:1", 0, ""], ["16.9.29", "Santos", "C", "Série A", "0:0", 0, ""], ["23.9.29", "Atlético Mineiro", "F", "Série A", "2:2", 0, ""], ["3.10.29", "Vitória", "F", "Série A", "5:0", 0, ""], ["11.10.29", "Corinthians", "C", "Série A", "2:1", 0, ""], ["17.10.29", "Ceará", "F", "Série A", "1:2", 0, ""], ["21.10.29", "Fluminense", "C", "Série A", "4:0", 0, ""], ["28.10.29", "Bahia", "F", "Série A", "1:1", 0, ""], ["31.10.29", "Atlético Goianiense", "C", "Série A", "2:1", 0, ""], ["4.11.29", "Internacional", "F", "Copa do Brasil", "0:2", 0, ""], ["7.11.29", "Cruzeiro", "F", "Série A", "0:2", 0, ""], ["11.11.29", "Internacional", "C", "Copa do Brasil", "4:1", 0, ""], ["21.11.29", "Palmeiras", "C", "Série A", "2:2", 0, ""], ["26.11.29", "Botafogo", "F", "Série A", "2:0", 0, ""], ["2.12.29", "Internacional", "C", "Série A", "1:0", 0, ""], ["5.12.29", "São Paulo", "F", "Série A", "5:0", 0, ""], ["9.12.29", "São Paulo", "N", "Copa do Brasil", "1:3", 0, ""]];
+const JOGOS_2026 = [["15.1.26", "Portuguesa (RJ)", "C", "Carioca", "5:1", 72197, "Léo Pereira, Danilo, Pedro 2, Bruno Henrique", ""], ["18.1.26", "Nova Iguaçu", "F", "Carioca", "1:1", 7951, "Bruno Henrique", ""], ["24.1.26", "Fluminense", "C", "Carioca", "5:0", 76764, "Pulgar, de Arrascaeta, Pedro 2, Lucas Paquetá", ""], ["29.1.26", "Corinthians", "C", "Série A", "3:1", 63509, "Jorginho, Pedro, Plata", ""], ["1.2.26", "Corinthians", "N", "Supercopa", "1:2", 60036, "de Arrascaeta", ""], ["4.2.26", "Grêmio", "F", "Série A", "1:2", 50513, "Carrascal", ""], ["6.2.26", "Botafogo", "F", "Carioca", "0:1", 38246, "", ""], ["8.2.26", "Bangu", "C", "Carioca", "5:0", 68675, "Everton Cebolinha, Araújo, Luiz Araújo, Rodríguez 2", ""], ["11.2.26", "Athletico Paranaense", "C", "Série A", "3:0", 59466, "Bruno Henrique, Alex Sandro, Carrascal", ""], ["14.2.26", "Fluminense", "C", "Carioca", "3:2", 76771, "Pulgar 2, Léo Pereira", ""], ["19.2.26", "Lanús", "C", "Recopa", "1:0", 70381, "Carrascal", ""], ["21.2.26", "Vasco", "C", "Carioca", "3:2", 76784, "Carrascal 2, Ñíguez", ""], ["26.2.26", "Lanús", "F", "Recopa", "4:0", 18022, "Bruno Henrique 3, Pedro", ""], ["28.2.26", "Vasco", "F", "Carioca", "0:0", 24985, "", ""], ["7.3.26", "Botafogo", "F", "Carioca", "3:2", 44993, "Carrascal, Mané 2", ""], ["12.3.26", "São Paulo", "C", "Série A", "3:2", 65194, "Pedro pen, Pulgar, Royal", ""], ["14.3.26", "Chapecoense", "F", "Série A", "2:0", 8744, "Carrascal, Mané", ""], ["19.3.26", "Vasco", "C", "Série A", "4:2", 76795, "Mané, Carrascal, Araújo, Lino", ""], ["21.3.26", "Fluminense", "F", "Série A", "3:2", 63632, "Bruno Henrique, Lucas Paquetá, Lino", ""], ["25.3.26", "Bahia", "F", "Série A", "2:0", 44567, "Bruno Henrique, Mané", ""], ["1.4.26", "Coquimbo Unido", "F", "Libertadores", "3:0", 14977, "Lino 2, Plata", ""], ["4.4.26", "Botafogo", "F", "Série A", "4:1", 44991, "Mané, Pedro, Ñíguez, Kaio ag", ""], ["8.4.26", "Cerro Porteño", "C", "Libertadores", "2:0", 63187, "Pedro, de Arrascaeta pen", ""], ["12.4.26", "Coritiba", "C", "Série A", "2:1", 59829, "Mané, Pedro pen", ""], ["19.4.26", "Mirassol", "F", "Série A", "3:4", 8824, "Lino, Mané, Pulgar", ""], ["22.4.26", "Central", "F", "Libertadores", "1:1", 41647, "Danilo", ""], ["25.4.26", "Palmeiras", "C", "Série A", "0:1", 60651, "", ""], ["29.4.26", "Amazonas", "F", "Copa do Brasil", "1:1", 4984, "Romero", ""], ["2.5.26", "Internacional", "F", "Série A", "1:2", 47101, "Léo Pereira", ""], ["6.5.26", "Coquimbo Unido", "C", "Libertadores", "7:0", 67010, "Danilo 2, Pulgar, Mané, Jorginho, Plata, Vitão pen", ""], ["9.5.26", "Cruzeiro", "C", "Série A", "1:2", 58694, "Lino", ""], ["13.5.26", "Cerro Porteño", "F", "Libertadores", "4:0", 27995, "de Arrascaeta, Pedro, Mané, Lucas Paquetá", ""], ["16.5.26", "Santos", "F", "Série A", "2:2", 19210, "Pedro, Lucas Paquetá", ""], ["20.5.26", "Amazonas", "C", "Copa do Brasil", "2:0", 64364, "Pedro, Mané", ""], ["23.5.26", "Bragantino", "C", "Série A", "1:1", 56263, "Mané", ""], ["27.5.26", "Central", "C", "Libertadores", "2:1", 69592, "Everton Cebolinha, Jorginho", ""], ["31.5.26", "Vitória", "F", "Série A", "1:0", 35619, "Lucas Paquetá", ""], ["3.6.26", "Remo", "C", "Série A", "3:0", 64356, "de Arrascaeta, Pulgar, Bruno Henrique", ""], ["23.7.26", "Atlético Mineiro", "C", "Série A", "3:0", 61459, "Pedro, Jorginho, Plata", ""], ["26.7.26", "Corinthians", "F", "Série A", "2:2", 48910, "Fred, Mané", ""], ["29.7.26", "Grêmio", "C", "Série A", "1:1", 59469, "Mané", ""], ["2.8.26", "Moto Club", "C", "Copa do Brasil", "2:0", 64369, "Romero, Bruno Henrique", ""], ["5.8.26", "Moto Club", "F", "Copa do Brasil", "2:0", 21471, "Luiz Araújo 2", ""], ["9.8.26", "Athletico Paranaense", "F", "Série A", "5:0", 34070, "Pedro 3, de Arrascaeta 2", ""], ["12.8.26", "Platense", "F", "Libertadores", "4:2", 18276, "Mané 4", ""], ["16.8.26", "Bahia", "C", "Série A", "2:0", 61265, "Pedro, Lino", ""], ["19.8.26", "Platense", "C", "Libertadores", "3:0", 65762, "Jorginho, Pedro, de Arrascaeta", ""], ["23.8.26", "São Paulo", "F", "Série A", "4:3", 67322, "Jorginho, Mané, Carrascal, Ayrton Lucas", ""], ["26.8.26", "São Paulo", "F", "Copa do Brasil", "2:2", 45809, "Léo Ortiz, Pedro", ""], ["30.8.26", "Chapecoense", "C", "Série A", "2:0", 53259, "Jorginho, Royal", ""], ["2.9.26", "São Paulo", "C", "Copa do Brasil", "2:0", 56831, "Pedro 2", ""], ["9.9.26", "Vasco", "F", "Série A", "3:1", 24963, "Fred, Mané, Plata", ""], ["12.9.26", "Botafogo", "C", "Série A", "2:0", 76792, "Pedro, Jorginho", ""], ["16.9.26", "Boca", "F", "Libertadores", "3:0", 57177, "Alex Sandro, Ñíguez, Pedro", ""], ["20.9.26", "Coritiba", "F", "Série A", "2:0", 32841, "Alex Sandro, Mané", ""], ["23.9.26", "Boca", "C", "Libertadores", "0:0", 66987, "", ""], ["8.10.26", "Fluminense", "C", "Série A", "3:0", 76793, "Jorginho, Pedro, Mané", ""], ["14.10.26", "Remo", "F", "Série A", "2:0", 16205, "Plata, Mané", ""], ["17.10.26", "Internacional", "C", "Série A", "1:0", 60761, "Jorginho", ""], ["21.10.26", "Independiente (ECU)", "F", "Libertadores", "1:0", 11967, "Pedro", ""], ["25.10.26", "Palmeiras", "F", "Série A", "1:3", 40176, "Mané", ""], ["28.10.26", "Independiente (ECU)", "C", "Libertadores", "2:0", 67007, "Mané, Pedro", ""], ["1.11.26", "Bahia", "C", "Copa do Brasil", "4:1", 67261, "Pedro, Fred, Mané 2", ""], ["4.11.26", "Cruzeiro", "F", "Série A", "3:2", 41123, "Fred, Royal, Mané", ""], ["8.11.26", "Bahia", "F", "Copa do Brasil", "2:1", 42569, "Mané 2", ""], ["11.11.26", "Mirassol", "C", "Série A", "1:1", 53389, "Pedro", ""], ["19.11.26", "Santos", "C", "Série A", "4:1", 57741, "Pedro, Carrascal, Duarte ag, Jorginho", ""], ["21.11.26", "Bragantino", "F", "Série A", "3:4", 9023, "Ayrton Lucas, Plata, Lino", ""], ["28.11.26", "Corinthians", "N", "Libertadores", "0:2", 65204, "", ""], ["2.12.26", "Atlético Mineiro", "F", "Série A", "3:1", 47425, "Mané 2, Plata", ""], ["6.12.26", "Cruzeiro", "N", "Copa do Brasil", "1:3", 64833, "Plata", ""], ["9.12.26", "Vitória", "C", "Série A", "1:1", 62057, "Pedro", ""]];
+const JOGOS_2027 = [["13.1.27", "Botafogo", "F", "Carioca", "5:1", 38247, "Fred, Jorginho, de Arrascaeta 2, Ronaldo", ""], ["16.1.27", "Angra dos Reis", "C", "Carioca", "3:2", 53085, "Mané, Ronaldo, Carrascal", ""], ["23.1.27", "Fluminense", "F", "Carioca", "4:2", 23501, "Mané, de Arrascaeta, Pedro, Fred", ""], ["27.1.27", "Atlético Mineiro", "F", "Série A", "1:0", 47448, "Mané", ""], ["31.1.27", "Cruzeiro", "N", "Supercopa", "1:3", 42404, "Carrascal", ""], ["5.2.27", "Nova Iguaçu", "C", "Carioca", "6:1", 54652, "Ronaldo, Jorginho, Mané 4", ""], ["7.2.27", "Boavista (RJ)", "F", "Carioca", "4:0", 2796, "Fred, Mané, de Arrascaeta 2", ""], ["11.2.27", "Internacional", "F", "Série A", "2:1", 48831, "Pulgar 2", ""], ["13.2.27", "Fluminense", "F", "Carioca", "4:1", 23486, "Mané, Pedro, Lino 2", ""], ["20.2.27", "Portuguesa (RJ)", "C", "Carioca", "4:0", 76774, "Lino 2, Pulgar, Mané", ""], ["24.2.27", "Atlético Goianiense", "C", "Série A", "3:1", 54996, "Pedro 2 (1 pen), Mané", ""], ["27.2.27", "Portuguesa (RJ)", "F", "Carioca", "1:0", 11980, "Ñíguez", ""], ["6.3.27", "Vasco", "F", "Carioca", "1:4", 31952, "Jorginho", ""], ["11.3.27", "Cruzeiro", "F", "Série A", "4:0", 15367, "Fred, de Arrascaeta 3", ""], ["13.3.27", "Corinthians", "C", "Série A", "1:1", 64111, "Jorginho", ""], ["18.3.27", "Vila Nova (GO)", "F", "Série A", "4:0", 11951, "de Arrascaeta, Ronaldo 2, Fred", ""], ["20.3.27", "Bahia", "C", "Série A", "0:0", 62394, "", ""], ["31.3.27", "Peñarol", "F", "Libertadores", "2:1", 36207, "Ronaldo, Ñíguez", ""], ["3.4.27", "Fluminense", "C", "Série A", "1:1", 76803, "Jorginho", ""], ["7.4.27", "At. Grau", "C", "Libertadores", "4:0", 71003, "Pedro 2, Royal, Mané", ""], ["11.4.27", "São Paulo", "F", "Série A", "0:2", 67353, "", ""], ["17.4.27", "Santos", "C", "Série A", "3:0", 55855, "Jorginho, Ronaldo, Araújo", ""], ["21.4.27", "Lanús", "F", "Libertadores", "4:1", 29341, "Mané, Fred, Araújo, Ronaldo", ""], ["24.4.27", "Juventude", "F", "Série A", "2:1", 19315, "Mané, Ronaldo", ""], ["28.4.27", "Vila Nova (GO)", "F", "Copa do Brasil", "5:1", 8954, "Pedro 2 (1 pen), Ñíguez, Allan, Lino", ""], ["1.5.27", "Mirassol", "C", "Série A", "5:0", 56497, "de Arrascaeta 2 (1 pen), Royal, Mané, Plata", ""], ["5.5.27", "Peñarol", "C", "Libertadores", "1:0", 72786, "Mané", ""], ["9.5.27", "Bragantino", "F", "Série A", "2:1", 13045, "Fred 2", ""], ["12.5.27", "At. Grau", "F", "Libertadores", "5:0", 20934, "Lino, Plata 2, Romero, Pedro pen", ""], ["15.5.27", "Cuiabá", "C", "Série A", "3:0", 62539, "Pulgar, Mané, Varela", ""], ["19.5.27", "Vila Nova (GO)", "C", "Copa do Brasil", "0:0", 53448, "", ""], ["22.5.27", "Botafogo", "F", "Série A", "5:0", 44956, "Ronaldo 3, Allan, Mané", ""], ["26.5.27", "Lanús", "C", "Libertadores", "6:0", 72759, "Pedro 3, Mané, Pulgar, Tello ag", ""], ["29.5.27", "Vasco", "C", "Série A", "5:2", 76758, "Mané 2, Fred, Allan, Pedro pen", ""], ["2.6.27", "Palmeiras", "C", "Série A", "1:2", 63917, "Pedro pen", ""], ["9.6.27", "Grêmio", "F", "Série A", "0:0", 50504, "", ""], ["22.7.27", "Vitória", "F", "Série A", "1:2", 35586, "Mané", ""], ["24.7.27", "Atlético Mineiro", "C", "Série A", "1:1", 61602, "de Arrascaeta", ""], ["28.7.27", "Palmeiras", "F", "Série A", "3:0", 14898, "de Arrascaeta, Mané 2", ""], ["1.8.27", "Athletico Paranaense", "C", "Copa do Brasil", "2:2", 56159, "Pedro 2", ""], ["4.8.27", "Athletico Paranaense", "F", "Copa do Brasil", "2:0", 29484, "Martinelli, Pedro", ""], ["8.8.27", "Internacional", "C", "Série A", "0:1", 58854, "", ""], ["11.8.27", "Cruzeiro", "F", "Libertadores", "1:0", 15516, "de Arrascaeta", ""], ["15.8.27", "Atlético Goianiense", "F", "Série A", "6:1", 13241, "Romero, Luiz Araújo, Lino, Vitão pen, Plata 2", ""], ["18.8.27", "Cruzeiro", "C", "Libertadores", "4:3", 62559, "Pedro 2, Martinelli, Fred", ""], ["21.8.27", "Vila Nova (GO)", "C", "Série A", "2:0", 57736, "Ñíguez, Lino", ""], ["25.8.27", "Juventude", "F", "Copa do Brasil", "2:0", 6899, "Lino, de Arrascaeta", ""], ["28.8.27", "Bahia", "F", "Série A", "0:2", 46698, "", ""], ["1.9.27", "Juventude", "C", "Copa do Brasil", "1:1", 53452, "Fred", ""], ["11.9.27", "Corinthians", "F", "Série A", "2:3", 49411, "Pedro, Mané", ""], ["15.9.27", "Vasco", "F", "Libertadores", "3:0", 31957, "Romero 2, Pulgar", ""], ["19.9.27", "São Paulo", "C", "Série A", "1:1", 68797, "Pedro", ""], ["22.9.27", "Vasco", "C", "Libertadores", "3:1", 76770, "Mané, João Victor pen, Løvik", ""], ["29.9.27", "Cruzeiro", "C", "Série A", "4:1", 59186, "Pedro pen, Pulgar, Plata, Martinelli", ""], ["7.10.27", "Santos", "F", "Série A", "2:0", 23018, "Lino 2", ""], ["17.10.27", "Fluminense", "F", "Série A", "0:1", 22293, "", ""], ["20.10.27", "Palmeiras", "F", "Libertadores", "2:4", 13388, "Pedro, Lino", ""], ["24.10.27", "Bragantino", "C", "Série A", "3:1", 58659, "Carrascal, Romero 2", ""], ["27.10.27", "Palmeiras", "C", "Libertadores", "1:0", 62912, "Pedro", ""], ["31.10.27", "Corinthians", "C", "Copa do Brasil", "3:1", 69467, "Mané 2, Royal", ""], ["3.11.27", "Juventude", "C", "Série A", "3:1", 58895, "Lino, Pulgar pen, Romero", ""], ["7.11.27", "Corinthians", "F", "Copa do Brasil", "2:0", 48936, "Martinelli, Lino", ""], ["10.11.27", "Grêmio", "C", "Série A", "1:0", 66154, "Lino", ""], ["16.11.27", "Mirassol", "F", "Série A", "6:1", 10845, "Pulgar, Mané, Plata, Vitão pen, Martinelli, Lino", ""], ["21.11.27", "Botafogo", "C", "Série A", "3:0", 76764, "Romero, Pedro, Plata", ""], ["25.11.27", "Cuiabá", "F", "Série A", "0:0", 28123, "", ""], ["27.11.27", "Vasco", "F", "Série A", "3:2", 31951, "Pedro 2, Pulgar", ""], ["1.12.27", "Vitória", "C", "Série A", "1:0", 67927, "Carrascal", ""], ["5.12.27", "Palmeiras", "N", "Copa do Brasil", "1:2", 55978, "Pedro", ""]];
+const JOGOS_2028 = [["12.1.28", "Angra dos Reis", "C", "Carioca", "4:0", 54380, "Mané, Pedro 2, Neves", ""], ["15.1.28", "Botafogo", "F", "Carioca", "0:0", 38210, "", ""], ["22.1.28", "Fluminense", "C", "Carioca", "6:1", 76058, "Pedro 2 (1 pen), Royal, Neves, Lino 2", ""], ["26.1.28", "Athletico Paranaense", "C", "Série A", "5:0", 66751, "Pedro 3 (1 pen), Milinkovic-Savic, Mané", ""], ["29.1.28", "Cabofriense", "F", "Carioca", "6:0", 6257, "Lino 3, Jorginho, Danilo, Alex Sandro", ""], ["2.2.28", "Santos", "F", "Série A", "2:0", 23715, "Pedro 2", ""], ["6.2.28", "Maricá", "C", "Carioca", "5:0", 64362, "Jorginho 2, Carrascal, Lino, Plata", ""], ["9.2.28", "Bragantino", "C", "Série A", "4:0", 61183, "Milinkovic-Savic 2, R.Neves 2", ""], ["12.2.28", "Fluminense", "C", "Carioca", "3:0", 76056, "Lino, Neves, Mané", ""], ["19.2.28", "Nova Iguaçu", "F", "Carioca", "3:0", 7995, "Fred, Carrascal, Mané", ""], ["24.2.28", "Grêmio", "F", "Série A", "4:2", 18776, "Lino 2, Mané 2", ""], ["26.2.28", "Nova Iguaçu", "C", "Carioca", "1:0", 55199, "Plata", ""], ["9.3.28", "Bahia", "C", "Série A", "3:3", 69956, "Neves, Mané, Pedro", ""], ["11.3.28", "Vasco", "C", "Carioca", "2:0", 76757, "Pedro, de Arrascaeta", ""], ["16.3.28", "Amazonas", "C", "Série A", "4:0", 74979, "Pedro, de Arrascaeta 2, Mané", ""], ["18.3.28", "Cruzeiro", "F", "Série A", "5:1", 18823, "Pedro 3, Royal, de Arrascaeta", ""], ["30.3.28", "Vitória", "C", "Série A", "1:0", 69808, "de Arrascaeta", ""], ["1.4.28", "Internacional", "F", "Série A", "1:3", 48828, "Pedro pen", ""], ["5.4.28", "At. Grau", "F", "Libertadores", "4:0", 20922, "Pedro, Løvik, Milinkovic-Savic, Neves", ""], ["9.4.28", "Coritiba", "C", "Série A", "5:0", 68655, "Pedro 2 (1 pen), Neves, Løvik, Milinkovic-Savic", ""], ["12.4.28", "Tigre", "C", "Libertadores", "3:0", 71400, "Milinkovic-Savic, Mané, Lino", ""], ["15.4.28", "Fluminense", "F", "Série A", "3:1", 25901, "Pedro, Martinelli, Mané", ""], ["23.4.28", "Goiás", "C", "Série A", "4:0", 62939, "Løvik, Lino 2, de Arrascaeta pen", ""], ["26.4.28", "Lanús", "F", "Libertadores", "3:0", 31228, "de Arrascaeta, Mané, Lino", ""], ["30.4.28", "Vasco", "F", "Série A", "1:1", 31959, "Plata", ""], ["3.5.28", "Athletico Paranaense", "F", "Copa do Brasil", "0:1", 29621, "", ""], ["6.5.28", "Botafogo", "C", "Série A", "1:1", 76771, "Pedro", ""], ["10.5.28", "At. Grau", "C", "Libertadores", "4:0", 72794, "Carrascal, Lino 2, Pulgar", ""], ["14.5.28", "Atlético Mineiro", "F", "Série A", "1:2", 47461, "Plata", ""], ["17.5.28", "Tigre", "F", "Libertadores", "3:0", 22846, "Jorginho, Rayan Lucas, Carrascal pen", ""], ["20.5.28", "São Paulo", "C", "Série A", "1:2", 72189, "Jorginho", ""], ["24.5.28", "Athletico Paranaense", "C", "Copa do Brasil", "6:1", 54585, "Pedro 4, Royal, Milinkovic-Savic", ""], ["27.5.28", "Palmeiras", "F", "Série A", "1:0", 14581, "Milinkovic-Savic", ""], ["31.5.28", "Lanús", "C", "Libertadores", "0:0", 72767, "", ""], ["7.6.28", "Corinthians", "F", "Série A", "2:1", 49405, "Pedro, Lino", ""], ["20.7.28", "Juventude", "C", "Série A", "1:0", 65135, "de Arrascaeta", ""], ["22.7.28", "Athletico Paranaense", "F", "Série A", "6:1", 35747, "Løvik, Lino 4, Pedro", ""], ["26.7.28", "Santos", "C", "Série A", "2:0", 64315, "Pedro 2 pens", ""], ["6.8.28", "Botafogo", "C", "Copa do Brasil", "3:0", 76757, "Pedro, Mané, Neves", ""], ["9.8.28", "Botafogo", "F", "Copa do Brasil", "0:2", 38211, "", ""], ["13.8.28", "Grêmio", "C", "Série A", "2:0", 63308, "Léo Ortiz, Martinelli", ""], ["16.8.28", "Lanús", "F", "Libertadores", "2:0", 30398, "Pedro, Plata", ""], ["20.8.28", "Bahia", "F", "Série A", "2:1", 44576, "Pedro pen, Martinelli", ""], ["23.8.28", "Lanús", "C", "Libertadores", "3:0", 72793, "Milinkovic-Savic 2, Plata", ""], ["26.8.28", "Cruzeiro", "C", "Série A", "2:0", 65928, "Pedro 2", ""], ["30.8.28", "Bragantino", "F", "Série A", "3:0", 13057, "Fabinho ag, Pedro 2", ""], ["2.9.28", "Vitória", "F", "Série A", "4:2", 35632, "Pedro 3 (1 pen), Milinkovic-Savic", ""], ["6.9.28", "Vitória", "F", "Copa do Brasil", "3:2", 29814, "Milinkovic-Savic, Pedro, Martinelli", ""], ["10.9.28", "Corinthians", "C", "Série A", "2:1", 68402, "Martinelli, Pedro", ""], ["13.9.28", "Vitória", "C", "Copa do Brasil", "3:1", 56437, "Mané, Pedro pen, Pepê", ""], ["17.9.28", "Amazonas", "F", "Série A", "3:1", 8674, "Jorginho, Pedro, Løvik", ""], ["20.9.28", "Palmeiras", "F", "Libertadores", "2:3", 17957, "Pedro, Pulgar", ""], ["27.9.28", "Palmeiras", "C", "Libertadores", "3:0", 63213, "Pulgar, Pedro, Royal", ""], ["4.10.28", "Fluminense", "C", "Série A", "3:1", 76759, "Lino, Pepê, Martinelli", ""], ["7.10.28", "Goiás", "F", "Série A", "2:2", 19772, "Neves, Pepê", ""], ["15.10.28", "Internacional", "C", "Série A", "1:0", 66595, "Pepê", ""], ["22.10.28", "Coritiba", "F", "Série A", "1:0", 32826, "Fred", ""], ["25.10.28", "São Paulo", "C", "Libertadores", "3:0", 71458, "Mané 2, Martinelli", ""], ["1.11.28", "São Paulo", "F", "Libertadores", "2:1", 67353, "Martinelli, Pedro", ""], ["5.11.28", "Corinthians", "C", "Copa do Brasil", "2:1", 69559, "Neves, de Arrascaeta", ""], ["8.11.28", "Vasco", "C", "Série A", "4:1", 76770, "Mané, Neves, Lino, Pepê", ""], ["12.11.28", "Corinthians", "F", "Copa do Brasil", "1:1", 48943, "Pedro", ""], ["14.11.28", "Botafogo", "F", "Série A", "2:1", 44990, "Pepê, Lino", ""], ["19.11.28", "São Paulo", "F", "Série A", "2:1", 67363, "Pedro pen, Lino", ""], ["29.11.28", "Palmeiras", "C", "Série A", "1:2", 61500, "Lino", ""], ["2.12.28", "Corinthians", "N", "Libertadores", "2:1", 84535, "Pedro 2", ""], ["5.12.28", "Juventude", "F", "Série A", "1:1", 19968, "Martinelli", ""], ["8.12.28", "Atlético Mineiro", "C", "Série A", "4:1", 67016, "Jorginho 2, Araújo, Lino", ""], ["10.12.28", "Internacional", "N", "Copa do Brasil", "2:2", 68006, "Martinelli, Pedro pen", "V"], ["13.12.28", "Cruz Azul", "N", "Intercontinental", "3:0", 59994, "Pepê 2, Pedro", ""], ["16.12.28", "Tractor", "N", "Intercontinental", "4:0", 88927, "Pedro 2, Milinkovic-Savic, Mané", ""], ["20.12.28", "PSG", "N", "Intercontinental", "2:3", 45388, "Mané, Milinkovic-Savic", ""]];
+const JOGOS_2029 = [["17.1.29", "Cabofriense", "C", "Carioca", "4:0", 0, "", ""], ["20.1.29", "Maricá", "N", "Carioca", "7:0", 0, "", ""], ["27.1.29", "Fluminense", "C", "Carioca", "5:0", 0, "", ""], ["31.1.29", "Juventude", "F", "Série A", "3:1", 0, "", ""], ["4.2.29", "Cruzeiro", "N", "Supercopa", "1:0", 0, "", ""], ["7.2.29", "Fortaleza", "C", "Série A", "0:0", 0, "", ""], ["9.2.29", "Bangu", "F", "Carioca", "3:1", 0, "", ""], ["11.2.29", "Goytacaz", "C", "Carioca", "4:0", 0, "", ""], ["15.2.29", "Vasco", "C", "Série A", "2:0", 0, "", ""], ["17.2.29", "Cabofriense", "C", "Carioca", "2:0", 0, "", ""], ["22.2.29", "Atlético Mineiro", "C", "Recopa", "3:0", 0, "", ""], ["24.2.29", "Botafogo", "F", "Carioca", "0:1", 0, "", ""], ["1.3.29", "Atlético Mineiro", "F", "Recopa", "2:1", 0, "", ""], ["3.3.29", "Botafogo", "C", "Carioca", "2:0", 0, "", ""], ["10.3.29", "Fluminense", "F", "Carioca", "2:1", 0, "", ""], ["14.3.29", "Guarani", "C", "Série A", "5:2", 0, "", ""], ["18.3.29", "Athletico Paranaense", "F", "Série A", "7:0", 0, "", ""], ["25.3.29", "Santos", "F", "Série A", "2:1", 0, "", ""], ["3.4.29", "Estudiantes (LP)", "C", "Libertadores", "3:0", 0, "", ""], ["7.4.29", "Corinthians", "F", "Série A", "2:2", 0, "", ""], ["10.4.29", "Anzoátegui", "F", "Libertadores", "3:0", 0, "", ""], ["15.4.29", "Ceará", "C", "Série A", "3:0", 0, "", ""], ["18.4.29", "Atlético Mineiro", "C", "Série A", "0:1", 0, "", ""], ["21.4.29", "Atlético Goianiense", "F", "Série A", "5:0", 0, "", ""], ["24.4.29", "Olimpia", "C", "Libertadores", "3:0", 0, "", ""], ["29.4.29", "Cruzeiro", "C", "Série A", "3:2", 0, "", ""], ["2.5.29", "Botafogo", "F", "Copa do Brasil", "4:0", 0, "", ""], ["5.5.29", "Fluminense", "F", "Série A", "2:2", 0, "", ""], ["8.5.29", "Estudiantes (LP)", "F", "Libertadores", "3:1", 0, "", ""], ["12.5.29", "Bahia", "C", "Série A", "1:0", 0, "", ""], ["15.5.29", "Anzoátegui", "C", "Libertadores", "4:0", 0, "", ""], ["20.5.29", "Palmeiras", "F", "Série A", "2:0", 0, "", ""], ["23.5.29", "Botafogo", "C", "Copa do Brasil", "2:0", 0, "", ""], ["26.5.29", "Botafogo", "C", "Série A", "0:1", 0, "", ""], ["29.5.29", "Olimpia", "F", "Libertadores", "4:0", 0, "", ""], ["3.6.29", "Internacional", "F", "Série A", "1:2", 0, "", ""], ["20.6.29", "Man Utd", "N", "Mundial de Clubes", "2:0", 0, "", ""], ["24.6.29", "Galatasaray", "N", "Mundial de Clubes", "4:1", 0, "", ""], ["28.6.29", "Água Santa", "N", "Mundial de Clubes", "1:1", 0, "", ""], ["3.7.29", "Al-Ahli (KSA)", "N", "Mundial de Clubes", "1:1", 0, "", "V"], ["7.7.29", "Cruzeiro", "N", "Mundial de Clubes", "1:3", 0, "", ""], ["11.7.29", "Bragantino", "C", "Série A", "2:0", 0, "", ""], ["25.7.29", "São Paulo", "C", "Série A", "3:1", 0, "", ""], ["29.7.29", "Guarani", "F", "Série A", "1:0", 0, "", ""], ["1.8.29", "Fortaleza", "F", "Série A", "6:0", 0, "", ""], ["5.8.29", "Remo", "C", "Copa do Brasil", "3:0", 0, "", ""], ["8.8.29", "Remo", "F", "Copa do Brasil", "4:1", 0, "", ""], ["12.8.29", "Juventude", "C", "Série A", "3:1", 0, "", ""], ["15.8.29", "Bahia", "F", "Libertadores", "1:3", 0, "", ""], ["19.8.29", "Vitória", "C", "Série A", "0:1", 0, "", ""], ["22.8.29", "Bahia", "C", "Libertadores", "1:0", 0, "", ""], ["26.8.29", "Bragantino", "F", "Série A", "2:1", 0, "", ""], ["29.8.29", "Água Santa", "C", "Copa do Brasil", "2:0", 0, "", ""], ["2.9.29", "Athletico Paranaense", "C", "Série A", "2:0", 0, "", ""], ["5.9.29", "Água Santa", "F", "Copa do Brasil", "2:2", 0, "", ""], ["9.9.29", "Vasco", "F", "Série A", "1:1", 0, "", ""], ["16.9.29", "Santos", "C", "Série A", "0:0", 0, "", ""], ["23.9.29", "Atlético Mineiro", "F", "Série A", "2:2", 0, "", ""], ["3.10.29", "Vitória", "F", "Série A", "5:0", 0, "", ""], ["11.10.29", "Corinthians", "C", "Série A", "2:1", 0, "", ""], ["17.10.29", "Ceará", "F", "Série A", "1:2", 0, "", ""], ["21.10.29", "Fluminense", "C", "Série A", "4:0", 0, "", ""], ["28.10.29", "Bahia", "F", "Série A", "1:1", 0, "", ""], ["31.10.29", "Atlético Goianiense", "C", "Série A", "2:1", 0, "", ""], ["4.11.29", "Internacional", "F", "Copa do Brasil", "0:2", 0, "", ""], ["7.11.29", "Cruzeiro", "F", "Série A", "0:2", 0, "", ""], ["11.11.29", "Internacional", "C", "Copa do Brasil", "4:1", 0, "", ""], ["21.11.29", "Palmeiras", "C", "Série A", "2:2", 0, "", ""], ["26.11.29", "Botafogo", "F", "Série A", "2:0", 0, "", ""], ["2.12.29", "Internacional", "C", "Série A", "1:0", 0, "", ""], ["5.12.29", "São Paulo", "F", "Série A", "5:0", 0, "", ""], ["9.12.29", "São Paulo", "N", "Copa do Brasil", "1:3", 0, "", ""]];
+const JOGOS_2030 = [["16.1.30", "Volta Redonda", "C", "Carioca", "5:0", 54762, "Sara 2, Pedro, Lodi, de Arrascaeta", ""], ["19.1.30", "Botafogo", "F", "Carioca", "2:1", 18722, "Pedro, Pracidelli", ""], ["26.1.30", "Fluminense", "C", "Carioca", "3:0", 76778, "Pedro pen, Lorran, Neves", ""], ["30.1.30", "Internacional", "C", "Série A", "2:0", 68845, "Milinkovic-Savic, Sara", ""], ["3.2.30", "São Paulo", "N", "Supercopa", "6:0", 42414, "Lodi, Neves, Pepê, Gabriel Mec, Sangaré, Fajardo", ""], ["6.2.30", "Bahia", "F", "Série A", "1:0", 44600, "Pedro", ""], ["8.2.30", "Maricá", "N", "Carioca", "3:0", 35218, "Sara, Mané, Jean Lucas", ""], ["10.2.30", "Bangu", "C", "Carioca", "3:2", 70385, "Lorran, Martinelli, Sara", ""], ["13.2.30", "Guarani", "C", "Série A", "1:0", 63868, "Milinkovic-Savic", ""], ["16.2.30", "Botafogo", "F", "Carioca", "1:1", 16689, "Pedro", "V"], ["23.2.30", "Cabofriense", "C", "Carioca", "6:0", 56696, "Milinkovic-Savic, Neves, Pepê, Pedro, Fajardo, Lorran pen", ""], ["28.2.30", "Juventude", "F", "Série A", "3:0", 21715, "Pedro 2, Gabriel Mec", ""], ["2.3.30", "Cabofriense", "F", "Carioca", "4:1", 8402, "Sara 2, Pracidelli, Jean Lucas", ""], ["9.3.30", "Vasco", "F", "Carioca", "2:1", 35575, "Pedro, Lodi", ""], ["13.3.30", "Athletico Paranaense", "C", "Série A", "4:0", 70341, "Lino, Pedro, Sara, Pracidelli", ""], ["17.3.30", "Santos", "F", "Série A", "1:0", 17655, "Pedro", ""], ["20.3.30", "Palmeiras", "C", "Série A", "3:2", 63144, "Lodi, Gabriel Mec, Pracidelli", ""], ["24.3.30", "Atlético Mineiro", "F", "Série A", "3:1", 47420, "Lorran, Sangaré, Pracidelli", ""], ["2.4.30", "Junior", "C", "Libertadores", "1:0", 73216, "Pracidelli", ""], ["5.4.30", "Athletic Club (MG)", "F", "Série A", "3:0", 10586, "Milinkovic-Savic, Løvik, Pedro", ""], ["7.4.30", "Água Santa", "C", "Série A", "3:0", 62880, "Lino, Sangaré, Sara", ""], ["9.4.30", "Puerto Cabello", "F", "Libertadores", "6:2", 7456, "Jean Lucas, Sangaré, Pepê 2, Éderson, Lorran", ""], ["14.4.30", "Corinthians", "F", "Série A", "1:0", 14887, "Lino", ""], ["20.4.30", "Coritiba", "C", "Série A", "3:0", 71940, "Pedro, Gabriel Mec, Éderson", ""], ["23.4.30", "Bahia", "C", "Libertadores", "2:1", 73176, "Sara, Milinkovic-Savic", ""], ["28.4.30", "Cuiabá", "F", "Série A", "6:1", 28110, "Lodi, Sara 2, Pedro 2, Lino", ""], ["1.5.30", "Juventude", "F", "Copa do Brasil", "3:0", 8625, "Sara, Éderson, Lino", ""], ["5.5.30", "São Paulo", "C", "Série A", "0:1", 63630, "", ""], ["7.5.30", "Junior", "F", "Libertadores", "4:0", 38439, "Gabriel Mec 3, Fajardo", ""], ["11.5.30", "Bragantino", "F", "Série A", "1:2", 12341, "Gabriel Mec", ""], ["14.5.30", "Puerto Cabello", "C", "Libertadores", "5:0", 73170, "Sangaré, Gabriel Mec, Pedro pen, Lino, Sara", ""], ["19.5.30", "Botafogo", "C", "Série A", "4:1", 76756, "Sara, Lino, Milinkovic-Savic, Pedro", ""], ["22.5.30", "Juventude", "C", "Copa do Brasil", "1:0", 53430, "Lorran", ""], ["25.5.30", "Vasco", "F", "Série A", "1:2", 35572, "Pracidelli", ""], ["28.5.30", "Bahia", "F", "Libertadores", "1:2", 44681, "Éderson", ""], ["2.6.30", "Cruzeiro", "C", "Série A", "3:2", 63685, "Pepê, Neves, Pedro", ""], ["28.7.30", "Guarani", "F", "Série A", "6:1", 16617, "Lino 2, Sara 2, Pedro, Pepê", ""], ["31.7.30", "Juventude", "C", "Série A", "2:1", 64255, "Lino, Sara", ""], ["4.8.30", "Mirassol", "F", "Copa do Brasil", "2:0", 9015, "Pedro, Sara", ""], ["7.8.30", "Mirassol", "C", "Copa do Brasil", "4:1", 53654, "Lorran, Pracidelli, Gabriel Mec pen, Sangaré", ""], ["11.8.30", "Internacional", "F", "Série A", "2:1", 40302, "Milinkovic-Savic, Pracidelli", ""], ["14.8.30", "Peñarol", "F", "Libertadores", "0:0", 36227, "", ""], ["18.8.30", "Bahia", "C", "Série A", "1:1", 68417, "Sara", ""], ["21.8.30", "Peñarol", "C", "Libertadores", "3:0", 73168, "Lino, Gabriel Mec 2", ""], ["25.8.30", "Palmeiras", "F", "Série A", "0:0", 11848, "", ""], ["28.8.30", "Cruzeiro", "C", "Copa do Brasil", "0:0", 53644, "", ""], ["1.9.30", "Atlético Mineiro", "C", "Série A", "3:2", 70576, "Pedro, Royal, Wesley", ""], ["4.9.30", "Cruzeiro", "F", "Copa do Brasil", "3:0", 11276, "Milinkovic-Savic, Lino, Pedro", ""], ["8.9.30", "Athletico Paranaense", "F", "Série A", "0:0", 34237, "", ""], ["11.9.30", "Vitória", "F", "Série A", "0:2", 35594, "", ""], ["15.9.30", "Santos", "C", "Série A", "2:0", 63794, "Pedro, Éderson", ""], ["18.9.30", "Tigre", "F", "Libertadores", "6:0", 21859, "Pedro 2, Lino, Gabriel Mec 2 (1 pen), Éderson", ""], ["22.9.30", "Athletic Club (MG)", "C", "Série A", "5:0", 73186, "Pedro 2 pens, Gabriel Mec, Sara, Lino", ""], ["25.9.30", "Tigre", "C", "Libertadores", "0:0", 73176, "", ""], ["10.10.30", "São Paulo", "F", "Série A", "0:0", 16742, "", ""], ["13.10.30", "Corinthians", "C", "Série A", "3:0", 63635, "Pedro 2 pens, Lino", ""], ["19.10.30", "Água Santa", "F", "Série A", "1:3", 11980, "Lino", ""], ["23.10.30", "Internacional", "C", "Libertadores", "4:1", 68700, "Sara, Gabriel Mec, Milinkovic-Savic 2", ""], ["27.10.30", "Cuiabá", "C", "Série A", "4:2", 72760, "Milinkovic-Savic, Pepê, Pedro, Sara", ""], ["30.10.30", "Internacional", "F", "Libertadores", "2:3", 48805, "Pepê, Sara", ""], ["3.11.30", "Internacional", "F", "Copa do Brasil", "1:2", 43866, "Pedro", ""], ["6.11.30", "Bragantino", "C", "Série A", "3:1", 63162, "Løvik, Pepê, Sangaré", ""], ["10.11.30", "Internacional", "C", "Copa do Brasil", "3:0", 67242, "Sara 2, Lino", ""], ["21.11.30", "Coritiba", "F", "Série A", "3:1", 35357, "Pedro, Lorran, Sara", ""], ["24.11.30", "Vasco", "C", "Série A", "4:2", 76801, "Éderson, Lorran, Pedro, Milinkovic-Savic", ""], ["27.11.30", "Cruzeiro", "F", "Série A", "1:1", 20820, "Lorran", ""], ["30.11.30", "Cruzeiro", "N", "Libertadores", "3:1", 84529, "Lorran, Pedro, Martinelli", ""], ["4.12.30", "Vitória", "C", "Série A", "1:0", 73042, "Pracidelli", ""], ["8.12.30", "Bahia", "N", "Copa do Brasil", "1:0", 64846, "Neves", ""], ["11.12.30", "Tijuana", "N", "Intercontinental", "5:0", 59964, "Éderson, Milinkovic-Savic, Lorran, Pracidelli 2", ""], ["14.12.30", "Al-Taawoun", "N", "Intercontinental", "4:0", 51451, "Jean Lucas, Pracidelli, Wesley, Pedro", ""], ["18.12.30", "Arsenal", "N", "Intercontinental", "1:2", 45399, "Pracidelli", ""], ["21.12.30", "Botafogo", "F", "Série A", "1:2", 32064, "Lino", ""]];
+const JOGOS_2031 = [["15.1.31", "Volta Redonda", "C", "Carioca", "4:0", 55877, "Milinkovic-Savic, Pedro pen, Sara, Pracidelli", ""], ["18.1.31", "Cabofriense", "F", "Carioca", "3:2", 8446, "Jean Lucas, Løvik, Fajardo", ""], ["25.1.31", "Vasco", "C", "Carioca", "4:1", 76794, "Pedro 2, Neves 2", ""], ["29.1.31", "CRB", "C", "Série A", "2:0", 67105, "Pedro pen, Milinkovic-Savic", ""], ["2.2.31", "Vasco", "N", "Supercopa", "4:2", 56687, "Neves, Milinkovic-Savic, Sara, Lorran", ""], ["5.2.31", "Botafogo", "F", "Série A", "2:1", 28695, "Éderson 2", ""], ["7.2.31", "Bangu", "F", "Carioca", "3:0", 11432, "Jean Lucas, Kaiky, Fajardo", ""], ["9.2.31", "América (RJ)", "F", "Carioca", "3:0", 11978, "Jean Lucas 2, Malen", ""], ["12.2.31", "Palmeiras", "C", "Série A", "4:0", 63410, "Sara 2, Lino, Lodi", ""], ["15.2.31", "Volta Redonda", "C", "Carioca", "4:0", 55881, "Pracidelli, Wesley, Éderson 2", ""], ["20.2.31", "Santos", "C", "Recopa", "2:1", 63527, "Lino, Milinkovic-Savic", ""], ["22.2.31", "Fluminense", "C", "Carioca", "2:1", 76064, "Éderson 2", ""], ["27.2.31", "Santos", "F", "Recopa", "3:0", 14131, "Fajardo 2, Neves", ""], ["1.3.31", "Fluminense", "F", "Carioca", "4:0", 23508, "Éderson 3, Pedro pen", ""], ["8.3.31", "Vasco", "F", "Carioca", "1:1", 35575, "Sangaré", "D"], ["12.3.31", "Santos", "C", "Série A", "1:0", 64231, "Løvik", ""], ["16.3.31", "Fortaleza", "F", "Série A", "1:0", 28645, "Pedro", ""], ["19.3.31", "Juventude", "C", "Série A", "3:0", 64803, "Milinkovic-Savic 2, Sara", ""], ["23.3.31", "Corinthians", "F", "Série A", "0:0", 19866, "", ""], ["26.3.31", "Atlético Mineiro", "F", "Série A", "2:1", 47438, "Pedro pen, Pepê", ""], ["1.4.31", "Puerto Cabello", "F", "Libertadores", "6:0", 7482, "Fajardo 5, Martinelli", ""], ["5.4.31", "Fluminense", "F", "Série A", "3:1", 41569, "Lino, Pedro, Fajardo", ""], ["8.4.31", "América de Cali", "C", "Libertadores", "2:1", 73441, "Pracidelli, Royal", ""], ["13.4.31", "Internacional", "C", "Série A", "3:2", 67426, "Milinkovic-Savic, Lorran, Fajardo", ""], ["19.4.31", "Guarani", "F", "Série A", "2:1", 16615, "Lino, Pedro", ""], ["22.4.31", "Vasco", "C", "Libertadores", "2:1", 76800, "Wesley, Sangaré", ""], ["27.4.31", "Athletico Paranaense", "C", "Série A", "4:2", 69293, "Pedro 3 (1 pen), Lino", ""], ["30.4.31", "América (MG)", "C", "Copa do Brasil", "7:0", 54467, "Milinkovic-Savic, Lino 2, Pedro, Fajardo 2, Pepê", ""], ["3.5.31", "Vasco", "F", "Série A", "0:2", 35558, "", ""], ["6.5.31", "Puerto Cabello", "C", "Libertadores", "3:0", 73475, "Éderson 3", ""], ["10.5.31", "Bahia", "C", "Série A", "0:0", 68690, "", ""], ["13.5.31", "América de Cali", "F", "Libertadores", "2:0", 32920, "Éderson, Pracidelli", ""], ["18.5.31", "São Paulo", "F", "Série A", "4:0", 21689, "Pedro, Lodi 2, Lino", ""], ["21.5.31", "América (MG)", "F", "Copa do Brasil", "1:0", 12944, "Kaiky pen", ""], ["24.5.31", "Cruzeiro", "C", "Série A", "2:0", 64118, "Lino, Fajardo", ""], ["27.5.31", "Vasco", "F", "Libertadores", "1:2", 35556, "Milinkovic-Savic", ""], ["1.6.31", "CRB", "F", "Série A", "2:0", 13201, "Pedro 2", ""], ["11.6.31", "Água Santa", "C", "Série A", "3:0", 65972, "Pedro, Pepê, Milinkovic-Savic", ""], ["23.7.31", "Bragantino", "C", "Série A", "2:0", 63463, "Sara, Fajardo", ""], ["27.7.31", "Sport Recife", "F", "Série A", "2:1", 35019, "Sara 2", ""], ["30.7.31", "Botafogo", "C", "Série A", "1:1", 76757, "Pepê", ""], ["3.8.31", "Santa Cruz (PE)", "C", "Copa do Brasil", "5:0", 62093, "Wesley, Fajardo 2, Sara, Pracidelli", ""], ["6.8.31", "Santa Cruz (PE)", "F", "Copa do Brasil", "0:0", 30529, "", ""], ["10.8.31", "Juventude", "F", "Série A", "2:0", 20818, "Pedro, Lorran", ""], ["13.8.31", "Santa Fe", "F", "Libertadores", "2:0", 27993, "Pepê, Pracidelli", ""], ["17.8.31", "Atlético Mineiro", "C", "Série A", "2:0", 70943, "Pedro 2", ""], ["20.8.31", "Santa Fe", "C", "Libertadores", "4:0", 73431, "Pedro 3, Lima", ""], ["24.8.31", "Palmeiras", "F", "Série A", "4:2", 11532, "Fajardo 2, Jean Lucas, Sara", ""], ["27.8.31", "Palmeiras", "C", "Copa do Brasil", "0:0", 53396, "", ""], ["31.8.31", "Fortaleza", "C", "Série A", "3:0", 73475, "Lorran, Royal, Fajardo", ""], ["3.9.31", "Palmeiras", "F", "Copa do Brasil", "4:0", 11291, "Pedro 3, Aktürkoglu", ""], ["7.9.31", "Santos", "F", "Série A", "1:0", 19486, "Fajardo", ""], ["13.9.31", "Fluminense", "C", "Série A", "4:0", 76790, "Fajardo 2, Lima, Wesley", ""], ["17.9.31", "River", "F", "Libertadores", "4:0", 84557, "Pedro, Éderson, Lorran, Lima", ""], ["21.9.31", "Internacional", "F", "Série A", "0:1", 43629, "", ""], ["24.9.31", "River", "C", "Libertadores", "1:0", 65774, "Fajardo", ""], ["19.10.31", "Guarani", "C", "Série A", "4:0", 63759, "Fajardo 4", ""], ["22.10.31", "Santos", "C", "Libertadores", "1:1", 64693, "Lino", ""], ["26.10.31", "Athletico Paranaense", "F", "Série A", "0:1", 34295, "", ""], ["29.10.31", "Santos", "F", "Libertadores", "0:1", 22259, "", ""], ["2.11.31", "Bragantino", "C", "Copa do Brasil", "0:0", 63131, "", ""], ["5.11.31", "Bahia", "F", "Série A", "2:2", 44726, "Pepê, Fajardo", ""], ["9.11.31", "Bragantino", "F", "Copa do Brasil", "3:2", 11506, "Sara, Lino, Luan Patrick ag", ""], ["11.11.31", "Corinthians", "C", "Série A", "4:0", 64418, "Fajardo 3, Lino", ""], ["15.11.31", "São Paulo", "C", "Série A", "2:0", 64474, "Milinkovic-Savic, Lino", ""], ["20.11.31", "Vasco", "C", "Série A", "3:1", 76799, "Fajardo 3", ""], ["23.11.31", "Cruzeiro", "F", "Série A", "2:2", 25029, "Fajardo 2", ""], ["26.11.31", "Água Santa", "F", "Série A", "1:1", 11998, "Wesley", ""], ["30.11.31", "Sport Recife", "C", "Série A", "2:0", 73702, "Castiello ag, Fajardo", ""], ["3.12.31", "Bragantino", "F", "Série A", "3:2", 11390, "Lorran, Fajardo 2", ""], ["7.12.31", "CRB", "N", "Copa do Brasil", "1:0", 62540, "Lorran", ""]];
+const JOGOS_2032 = [["14.1.32", "Bangu", "C", "Carioca", "1:0", 69943, "Lino", ""], ["17.1.32", "Cabofriense", "F", "Carioca", "6:2", 8447, "Aktürkoglu, Sara 4, Lino", ""], ["24.1.32", "Fluminense", "C", "Carioca", "5:0", 76794, "Sara, Aktürkoglu pen, Pepê, Neves, Pedro", ""], ["28.1.32", "Palmeiras", "C", "Série A", "1:0", 63874, "Pedro", ""], ["1.2.32", "Cruzeiro", "N", "Supercopa", "0:1", 58138, "", ""], ["4.2.32", "Botafogo", "F", "Série A", "2:2", 34464, "Milinkovic-Savic, Fajardo", ""], ["6.2.32", "Nova Iguaçu", "F", "Carioca", "4:1", 9070, "Lorran 2, Éderson, Pedro", ""], ["8.2.32", "Goytacaz", "C", "Carioca", "5:0", 53217, "Jean Lucas, Pracidelli 2, Lorran, Éderson", ""], ["11.2.32", "Atlético Goianiense", "C", "Série A", "0:0", 65212, "", ""], ["14.2.32", "Cabofriense", "C", "Carioca", "5:0", 55724, "Aktürkoglu, Neves, Sara, Éderson, Fajardo", ""], ["21.2.32", "Madureira", "F", "Carioca", "0:1", 9961, "", ""], ["28.2.32", "Madureira", "C", "Carioca", "4:0", 75235, "Lino 3, Milinkovic-Savic", ""], ["6.3.32", "Botafogo", "C", "Carioca", "4:1", 76779, "Fajardo 2, Milinkovic-Savic, Lorran pen", ""], ["10.3.32", "Juventude", "F", "Série A", "1:0", 20832, "Lino", ""], ["14.3.32", "Guarani", "F", "Série A", "2:3", 16580, "Fajardo, Sara", ""], ["17.3.32", "Internacional", "C", "Série A", "4:1", 67415, "Lino, Royal, Fajardo 2", ""], ["21.3.32", "Fortaleza", "C", "Série A", "0:1", 73700, "", ""], ["24.3.32", "Água Santa", "F", "Série A", "1:1", 11987, "Aktürkoglu", ""], ["31.3.32", "Estudiantes (LP)", "F", "Libertadores", "4:1", 50176, "Luiz Henrique, Sara, Fajardo 2", ""], ["4.4.32", "Santos", "C", "Série A", "2:0", 64209, "Milinkovic-Savic, Aktürkoglu pen", ""], ["7.4.32", "Aucas", "C", "Libertadores", "2:2", 69120, "Pedro pen, Royal", ""], ["11.4.32", "Corinthians", "F", "Série A", "2:1", 17194, "Aktürkoglu, Pedro", ""], ["17.4.32", "Vitória", "C", "Série A", "2:0", 67578, "Lino, Aktürkoglu pen", ""], ["21.4.32", "Santa Fe", "F", "Libertadores", "2:2", 28001, "Løvik, Fajardo", ""], ["25.4.32", "Vasco", "F", "Série A", "3:4", 35584, "Milinkovic-Savic 2, Otávio ag", ""], ["28.4.32", "Botafogo", "F", "Copa do Brasil", "3:0", 18723, "Sara, Fajardo 2", ""], ["2.5.32", "Athletic Club (MG)", "C", "Série A", "4:1", 69086, "Fajardo 2, Milinkovic-Savic, Lorran pen", ""], ["5.5.32", "Estudiantes (LP)", "C", "Libertadores", "2:0", 69101, "Fajardo, Milinkovic-Savic", ""], ["9.5.32", "Cruzeiro", "F", "Série A", "3:1", 27751, "Sara, Lorran, Fajardo", ""], ["12.5.32", "Aucas", "F", "Libertadores", "2:1", 21365, "Sara, Fajardo", ""], ["16.5.32", "Bragantino", "C", "Série A", "2:0", 60204, "Fajardo, Lino", ""], ["19.5.32", "Botafogo", "C", "Copa do Brasil", "0:0", 69093, "", ""], ["22.5.32", "Bahia", "F", "Série A", "0:1", 44829, "", ""], ["26.5.32", "Santa Fe", "C", "Libertadores", "3:1", 69096, "Fajardo, Pepê, Sara pen", ""], ["30.5.32", "Atlético Goianiense", "F", "Série A", "3:1", 13470, "Pepê, Lima, Fajardo", ""], ["9.6.32", "Athletico Paranaense", "F", "Série A", "4:0", 34419, "Lino 2, Sara pen, Wesley", ""], ["21.7.32", "Náutico", "F", "Série A", "3:0", 17892, "Royal, Fajardo 2", ""], ["25.7.32", "Atlético Mineiro", "C", "Série A", "3:1", 67657, "Aktürkoglu, Lima, Fajardo", ""], ["28.7.32", "Botafogo", "C", "Série A", "0:0", 69113, "", ""], ["1.8.32", "Vitória", "F", "Copa do Brasil", "2:4", 28732, "Fajardo, Lorran", ""], ["4.8.32", "Vitória", "C", "Copa do Brasil", "3:0", 56048, "Fajardo, Sara, Lino", ""], ["8.8.32", "Internacional", "F", "Série A", "3:0", 45602, "Fajardo 2, Milinkovic-Savic", ""], ["11.8.32", "Juventude", "F", "Libertadores", "1:0", 20788, "Lorran", ""], ["15.8.32", "Água Santa", "C", "Série A", "1:1", 59619, "Lima", ""], ["18.8.32", "Juventude", "C", "Libertadores", "1:1", 61688, "Fajardo", ""], ["22.8.32", "Palmeiras", "F", "Série A", "3:1", 17070, "Fajardo, Milinkovic-Savic, Lino", ""], ["25.8.32", "Palmeiras", "C", "Copa do Brasil", "3:0", 53476, "Lino 2, Sara", ""], ["28.8.32", "Guarani", "C", "Série A", "1:0", 60295, "Fajardo", ""], ["1.9.32", "Palmeiras", "F", "Copa do Brasil", "3:1", 11304, "Sara 2, Lorran", ""], ["5.9.32", "Athletico Paranaense", "C", "Série A", "1:0", 66708, "Fajardo", ""], ["11.9.32", "Fortaleza", "F", "Série A", "2:0", 36762, "Pedro, Milinkovic-Savic", ""], ["15.9.32", "Internacional", "C", "Libertadores", "2:1", 65544, "Fajardo, Delgado", ""], ["19.9.32", "Juventude", "C", "Série A", "1:0", 61307, "Pérez", ""], ["22.9.32", "Internacional", "F", "Libertadores", "2:1", 48800, "Fajardo 2", ""], ["10.10.32", "Vasco", "C", "Série A", "2:2", 69090, "Fajardo 2", ""], ["17.10.32", "Athletic Club (MG)", "F", "Série A", "2:0", 10554, "Royal, Milinkovic-Savic", ""], ["20.10.32", "Cruzeiro", "C", "Libertadores", "3:2", 61894, "Fajardo 2, Aktürkoglu pen", ""], ["24.10.32", "Corinthians", "C", "Série A", "2:0", 60692, "Fajardo 2", ""], ["27.10.32", "Cruzeiro", "F", "Libertadores", "1:1", 33620, "Lino", ""], ["31.10.32", "Cruzeiro", "F", "Copa do Brasil", "1:0", 28854, "Milinkovic-Savic", ""], ["3.11.32", "Cruzeiro", "C", "Série A", "2:0", 61165, "Pedro, Éderson", ""], ["7.11.32", "Cruzeiro", "C", "Copa do Brasil", "3:2", 61391, "Fajardo, Delgado, Sara", ""], ["9.11.32", "Santos", "F", "Série A", "1:1", 17751, "Martinelli", ""], ["13.11.32", "Vitória", "F", "Série A", "1:0", 35585, "Fajardo", ""], ["21.11.32", "Bahia", "C", "Série A", "2:1", 65032, "Fajardo, Lorran pen", ""], ["24.11.32", "Bragantino", "F", "Série A", "1:1", 13044, "Lorran", ""], ["27.11.32", "Palmeiras", "N", "Libertadores", "2:1", 70904, "Lino 2", ""], ["1.12.32", "Náutico", "C", "Série A", "3:1", 69105, "Lorran, Pedro 2", ""], ["5.12.32", "Corinthians", "N", "Copa do Brasil", "2:0", 55668, "Lino, Fajardo", ""], ["8.12.32", "Los Angeles", "N", "Intercontinental", "6:0", 51714, "Lino, Sara, Fajardo, Pedro 3", ""], ["11.12.32", "Frontale", "N", "Intercontinental", "4:1", 86537, "Éderson, Fajardo, Lino, Aktürkoglu pen", ""], ["15.12.32", "Tottenham", "N", "Intercontinental", "3:3", 45388, "Lino, Lodi, Éderson", "D"], ["18.12.32", "Atlético Mineiro", "F", "Série A", "1:0", 42694, "Lino", ""]];
 
 /* Formato de cada jogo:
-   [data, adversário, C/F/N, competição, placar, público, marcadores] */
+   [data, adversário, C/F/N, competição, placar, público, marcadores, pênaltis] */
 
 const TEMPORADAS = {
   "2026": {
@@ -1233,6 +1914,21 @@ const TEMPORADAS = {
     jogos: JOGOS_2029,
     decisoes: ["4.2.29","1.3.29","10.3.29","5.12.29","9.12.29"],
     parada: "3.6.29"
+  },
+  "2030": {
+    jogos: JOGOS_2030,
+    decisoes: ["3.2.30","9.3.30","30.11.30","8.12.30","18.12.30"],
+    parada: "2.6.30"
+  },
+  "2031": {
+    jogos: JOGOS_2031,
+    decisoes: ["2.2.31","27.2.31","8.3.31","7.12.31"],
+    parada: "11.6.31"
+  },
+  "2032": {
+    jogos: JOGOS_2032,
+    decisoes: ["1.2.32","6.3.32","27.11.32","5.12.32","15.12.32"],
+    parada: "9.6.32"
   }
 };
 
@@ -1253,13 +1949,16 @@ function montarTemporada(ano, dados){
   let ativo = null;
 
   function mostrar(j){
-    const [data, adv, loc, comp, placar, pub, marc] = j;
+    const [data, adv, loc, comp, placar, pub, marc, pen] = j;
     const onde = loc === "C" ? "em casa" : (loc === "F" ? "fora" : "campo neutro");
     leitura.classList.remove("vazia");
+    const meta = [data, comp, onde];
+    if (pub) meta.push(pub.toLocaleString("pt-BR") + " pessoas");
     leitura.innerHTML =
-      '<span class="placar">' + placar.replace(":","×") + " &nbsp;" + adv + "</span><br>" +
-      '<span class="meta">' + data + " · " + comp + " · " + onde + " · " +
-      pub.toLocaleString("pt-BR") + " pessoas</span>" +
+      '<span class="placar">' + placar.replace(":","×") + " &nbsp;" + adv + "</span>" +
+      (pen ? ' <span class="pen">' + (pen === "V" ? "venceu nos pênaltis" : "perdeu nos pênaltis") + "</span>" : "") +
+      "<br>" +
+      '<span class="meta">' + meta.join(" · ") + "</span>" +
       (marc ? '<br><span class="gols">' + marc + "</span>" : "");
   }
 
@@ -1270,8 +1969,10 @@ function montarTemporada(ano, dados){
     b.dataset.r = res(j[4]);
     b.dataset.comp = j[3];
     if (decisoes.has(j[0])) b.dataset.final = "1";
+    if (j[7]) b.dataset.pen = j[7];
     b.setAttribute("role","listitem");
-    b.setAttribute("aria-label", j[0] + " " + j[1] + " " + j[4]);
+    b.setAttribute("aria-label", j[0] + " " + j[1] + " " + j[4] +
+      (j[7] ? (j[7] === "V" ? " (venceu nos pênaltis)" : " (perdeu nos pênaltis)") : ""));
     b.addEventListener("mouseenter", () => mostrar(j));
     b.addEventListener("focus", () => mostrar(j));
     b.addEventListener("click", () => mostrar(j));
@@ -1310,21 +2011,29 @@ Object.keys(TEMPORADAS).forEach(ano => montarTemporada(ano, TEMPORADAS[ano]));
 /* ---------- retrospecto geral: agrega todas as temporadas ---------- */
 const retro = (function(){
   const mapa = new Map();
+  const disputas = [];
   Object.keys(TEMPORADAS).forEach(ano => {
     TEMPORADAS[ano].jogos.forEach(g => {
       const adv = g[1];
       const [gp, gc] = g[4].split(":").map(Number);
-      if (!mapa.has(adv)) mapa.set(adv, { adv: adv, j:0, v:0, e:0, d:0, gp:0, gc:0 });
+      if (!mapa.has(adv)) mapa.set(adv, { adv: adv, j:0, v:0, e:0, d:0, gp:0, gc:0, penV:0, penD:0 });
       const t = mapa.get(adv);
       t.j++; t.gp += gp; t.gc += gc;
       if (gp > gc) t.v++; else if (gp === gc) t.e++; else t.d++;
+      /* Empates de mata-mata em jogo único: o placar segue empate no
+         retrospecto (é assim que o próprio jogo contabiliza), mas a
+         decisão por pênaltis fica registrada à parte. */
+      if (g[7] === "V") { t.penV++; disputas.push({ ano: ano, adv: adv, data: g[0], comp: g[3], placar: g[4], r: "V" }); }
+      else if (g[7] === "D") { t.penD++; disputas.push({ ano: ano, adv: adv, data: g[0], comp: g[3], placar: g[4], r: "D" }); }
     });
   });
-  return Array.from(mapa.values()).map(t => {
+  const lista = Array.from(mapa.values()).map(t => {
     t.sg = t.gp - t.gc;
     t.ap = t.j ? (t.v * 3 + t.e) / (t.j * 3) * 100 : 0;
     return t;
   });
+  lista.disputas = disputas;
+  return lista;
 })();
 
 (function montarRetro(){
@@ -1348,8 +2057,15 @@ const retro = (function(){
       const tr = document.createElement("tr");
       const pct = t.ap.toFixed(0) + "%";
       const larg = x => (t.j ? (x / t.j) * 100 : 0).toFixed(2) + "%";
+      const marca = (t.penV || t.penD)
+        ? ' <span class="pen-mark" title="' +
+            (t.penV ? t.penV + " vitória" + (t.penV > 1 ? "s" : "") + " nos pênaltis" : "") +
+            (t.penV && t.penD ? ", " : "") +
+            (t.penD ? t.penD + " derrota" + (t.penD > 1 ? "s" : "") + " nos pênaltis" : "") +
+          '">†</span>'
+        : "";
       tr.innerHTML =
-        "<td>" + t.adv + "</td>" +
+        "<td>" + t.adv + marca + "</td>" +
         '<td class="destaque-num">' + t.j + "</td>" +
         '<td class="num">' + t.v + "</td>" +
         '<td class="num">' + t.e + "</td>" +
@@ -1403,6 +2119,14 @@ const retro = (function(){
   const melhor = frequentes.slice().sort((a, b) => b.ap - a.ap)[0];
   const negativos = retro.filter(t => t.d > t.v).sort((a, b) => (b.d - b.v) - (a.d - a.v));
 
+  const penNota = retro.disputas.length
+    ? "<br>† Decidido nos pênaltis (o placar segue como empate, que é como o próprio jogo contabiliza): " +
+      retro.disputas.map(d =>
+        d.adv + " " + d.placar.replace(":", "×") + ", " + d.comp + " " + d.ano +
+        " — " + (d.r === "V" ? "vitória" : "derrota")
+      ).join("; ") + "."
+    : "";
+
   nota.innerHTML =
     "Com cinco jogos ou mais, o melhor retrospecto é contra o " + melhor.adv +
     " (" + melhor.v + "V " + melhor.e + "E " + melhor.d + "D) e o pior contra o " + pior.adv +
@@ -1411,7 +2135,8 @@ const retro = (function(){
       ? "<br>Saldo de resultados negativo contra " + negativos.length + " adversário" +
         (negativos.length > 1 ? "s" : "") + ": " +
         negativos.map(t => t.adv + " (" + t.v + "-" + t.e + "-" + t.d + ")").join(", ") + "."
-      : "");
+      : "") +
+    penNota;
 
   desenhar();
 })();
