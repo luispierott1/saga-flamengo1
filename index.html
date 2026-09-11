@@ -137,6 +137,16 @@ a{color:inherit}
   color:var(--ouro);border:1px solid var(--ouro);padding:1px 6px;margin-left:8px;white-space:nowrap;
 }
 .retro-tabela .pen-mark{color:var(--ouro);font-weight:600;cursor:help}
+
+/* ---------- galeria de títulos e mapa de fases ---------- */
+#galeria .trofeu p{font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;line-height:1.8}
+#galeria .fases table{font-family:var(--mono);font-size:.74rem}
+#galeria .fases th:first-child,#galeria .fases td:first-child{text-align:left;white-space:nowrap}
+#galeria .fases td{white-space:nowrap;text-align:center}
+#galeria .fases td.camp{color:var(--ouro);font-weight:600}
+#galeria .fases td.vice{color:var(--rubro)}
+#galeria .fases td.nd{color:var(--vinho-2)}
+#galeria .fases td.tot{color:var(--ouro);font-weight:600}
 .intervalo{
   flex:0 0 14px;height:46px;border-left:1px dashed var(--vinho-2);
   border-right:1px dashed var(--vinho-2);
@@ -311,6 +321,7 @@ a{color:inherit}
       <li><a href="#t2032">2032</a></li>
       <li><a href="#t2033">2033</a></li>
       <li><a href="#retrospecto">Retrospecto</a></li>
+      <li><a href="#galeria">Títulos</a></li>
       <li class="vazia"><a href="#proxima">2034 · em aberto</a></li>
     </ul>
   </div>
@@ -2095,6 +2106,82 @@ a{color:inherit}
     </div>
 
     <p class="retro-nota" id="retro-nota"></p>
+  </div>
+</section>
+
+<!-- ============================================================
+     GALERIA DE TÍTULOS E MAPA DE FASES
+     Bloco estático. Ao fechar uma temporada nova, acrescente o ano
+     nos cartões da galeria e uma coluna na tabela de fases.
+     ============================================================ -->
+<section class="retro" id="galeria">
+  <div class="wrap">
+    <div class="eyebrow">Acumulado · oito temporadas</div>
+    <div class="titulo">Trinta títulos<br>em oito anos</div>
+    <p class="intro">Tudo o que foi ganho desde 2026, por competição, e a fase alcançada em cada ano. Uma linha por torneio, um ano por coluna.</p>
+
+    <div class="trofeus">
+      <div class="trofeu ganho">
+        <div class="tag">7 títulos</div>
+        <h3>Brasileirão Série A</h3>
+        <p>2026 · 2028 · 2029 · 2030<br>2031 · 2032 · 2033</p>
+      </div>
+      <div class="trofeu ganho">
+        <div class="tag">6 títulos</div>
+        <h3>Campeonato Carioca</h3>
+        <p>2026 · 2028 · 2029<br>2030 · 2032 · 2033</p>
+      </div>
+      <div class="trofeu ganho">
+        <div class="tag">5 títulos</div>
+        <h3>Copa do Brasil</h3>
+        <p>2028 · 2030 · 2031<br>2032 · 2033</p>
+      </div>
+      <div class="trofeu ganho">
+        <div class="tag">4 títulos</div>
+        <h3>Supercopa Rei</h3>
+        <p>2029 · 2030 · 2031 · 2033</p>
+      </div>
+      <div class="trofeu ganho">
+        <div class="tag">4 títulos</div>
+        <h3>Recopa Sudamericana</h3>
+        <p>2026 · 2029 · 2031 · 2033</p>
+      </div>
+      <div class="trofeu ganho">
+        <div class="tag">3 títulos</div>
+        <h3>Copa Libertadores</h3>
+        <p>2028 · 2030 · 2032</p>
+      </div>
+      <div class="trofeu ganho">
+        <div class="tag">1 título</div>
+        <h3>Mundial de Clubes FIFA</h3>
+        <p>2033</p>
+      </div>
+      <div class="trofeu perdido">
+        <div class="tag">Nunca veio</div>
+        <h3>Copa Intercontinental</h3>
+        <p>Finais perdidas em<br>2028 · 2030 · 2032</p>
+      </div>
+    </div>
+
+    <div class="retro-tabela fases">
+      <table>
+        <thead>
+          <tr><th scope="col">Competição</th><th scope="col">26</th><th scope="col">27</th><th scope="col">28</th><th scope="col">29</th><th scope="col">30</th><th scope="col">31</th><th scope="col">32</th><th scope="col">33</th><th scope="col">Tít.</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Brasileirão Série A</th><td class="camp">Campeão</td><td class="out">3º</td><td class="camp">Campeão</td><td class="camp">Campeão</td><td class="camp">Campeão</td><td class="camp">Campeão</td><td class="camp">Campeão</td><td class="camp">Campeão</td><td class="tot">7</td></tr>
+          <tr><th scope="row">Campeonato Carioca</th><td class="camp">Campeão</td><td class="vice">Vice</td><td class="camp">Campeão</td><td class="camp">Campeão</td><td class="camp">Campeão</td><td class="vice">Vice</td><td class="camp">Campeão</td><td class="camp">Campeão</td><td class="tot">6</td></tr>
+          <tr><th scope="row">Copa do Brasil</th><td class="vice">Vice</td><td class="vice">Vice</td><td class="camp">Campeão</td><td class="vice">Vice</td><td class="camp">Campeão</td><td class="camp">Campeão</td><td class="camp">Campeão</td><td class="camp">Campeão</td><td class="tot">5</td></tr>
+          <tr><th scope="row">Copa Libertadores</th><td class="vice">Vice</td><td class="out">Semi</td><td class="camp">Campeão</td><td class="out">Oitavas</td><td class="camp">Campeão</td><td class="out">Semi</td><td class="camp">Campeão</td><td class="vice">Vice</td><td class="tot">3</td></tr>
+          <tr><th scope="row">Supercopa Rei</th><td class="vice">Vice</td><td class="vice">Vice</td><td class="nd">—</td><td class="camp">Campeão</td><td class="camp">Campeão</td><td class="camp">Campeão</td><td class="vice">Vice</td><td class="camp">Campeão</td><td class="tot">4</td></tr>
+          <tr><th scope="row">Recopa Sudamericana</th><td class="camp">Campeão</td><td class="nd">—</td><td class="nd">—</td><td class="camp">Campeão</td><td class="nd">—</td><td class="camp">Campeão</td><td class="nd">—</td><td class="camp">Campeão</td><td class="tot">4</td></tr>
+          <tr><th scope="row">Mundial de Clubes</th><td class="nd">—</td><td class="nd">—</td><td class="nd">—</td><td class="out">Quartas</td><td class="nd">—</td><td class="nd">—</td><td class="nd">—</td><td class="camp">Campeão</td><td class="tot">1</td></tr>
+          <tr><th scope="row">Copa Intercontinental</th><td class="nd">—</td><td class="nd">—</td><td class="vice">Vice</td><td class="nd">—</td><td class="vice">Vice</td><td class="nd">—</td><td class="vice">Vice</td><td class="nd">—</td><td class="nd">0</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="retro-nota">Travessão significa competição não disputada naquele ano: sem Supercopa em 2028, sem Recopa em 2027, 2028, 2030 e 2032. O Mundial de Clubes da FIFA entrou no calendário em 2029 e 2033; a Copa Intercontinental, em 2028, 2030 e 2032 — são torneios distintos, e o segundo é o único título que ainda não veio.</p>
   </div>
 </section>
 
